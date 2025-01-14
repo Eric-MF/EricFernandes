@@ -6,13 +6,13 @@
     width: 0.5em;
     background-color: #0000;
     display: inline-block;
-    transform: translate(-0.5em, 0) rotateZ(45deg);
+    transform: translate(-.5em, 0) rotateZ(45deg);
     border-right: .15em  solid;
     border-bottom: .15em  solid;
     transition: transform 1s ease-in-out;
 }
 .perguntas_respostas:has(input:checked) .seta{
-    transform: translate(-0.5em, -0.2em) rotateX(180deg) rotateZ(45deg);
+    transform: translate(-.5em, -0.2em) rotateX(180deg) rotateZ(45deg);
     transition: transform .25s ease-in-out;
 }
 
