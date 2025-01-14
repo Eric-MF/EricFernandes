@@ -1,0 +1,29 @@
+.sobre{
+    background-color: var(--preto);
+    padding: 2em 1em;
+    width: auto;
+}
+.sobre_subsecao{
+    background: var(--cor-primaria-escurissima);
+    border-radius: 1em;
+}
+.sobre_titulo{
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0.5em 1em;
+}
+.sobre_texto{
+    text-align: justify;
+    text-justify:inter-word;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    line-height: 1.2em;
+}
+.sobre_texto_destaque_1{
+    color: var(--cor-primaria-clarissima);
+    font-weight: 600;
+}
+.sobre_texto_destaque_2{
+    color: var(--cor-secundaria-clarissima);
+    font-weight: 600;
+}

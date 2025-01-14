@@ -1,0 +1,30 @@
+@import url("styles/cores.css");
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/sobre.css");
+@import url("styles/duvidas.css");
+@import url("styles/contatos.css");
+@import url("styles/endereco.css");
+@import url("styles/rodape.css");
+
+
+body {
+    background-color: var(--preto);
+    color:var(--branco);
+    font-family: "Inter", serif;
+}
+.container-1{
+margin: 0 1rem 0 1rem;
+}
+svg{
+    fill: var(--branco);
+    transition: fill 0.5s ease-in-out;
+}
+svg:hover {
+    fill: var(--cor-primaria-clarissima);
+    transition: fill 0.5s ease-in-out;
+}
+#logo{
+    height: 40px;
+}
+

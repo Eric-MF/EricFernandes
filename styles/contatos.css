@@ -1,0 +1,60 @@
+
+.contatos-titulo, .contatos p{
+    font-weight: 600;
+    padding: 0.5em 1em;
+}
+
+.contatos-titulo{
+    font-size: 1.5em;
+}
+
+.contatos p{
+    font-size: 1.2em;
+
+}
+.lista-contatos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:1em auto;
+    justify-content: space-around;
+    
+}
+.lista-contatos li a{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    color: var(--branco);
+    text-decoration: dotted;
+    border: .2em solid var(--branco);
+    border-radius: 3em;
+    padding: .5em .3em;
+    margin: .3em;
+}
+.lista-contatos li a span{
+    margin: 1em;
+}
+.contatos svg{
+    width: 3em;
+    margin-left: .3em;
+}
+.contatos-linha{
+    display: inline-block;
+    inset: 0;
+    text-align: center;
+    height: 1px;
+    width: 70vw;
+    margin-left: 15vw;
+    background: var(--background, linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria), var(--cor-terciaria)));
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    align-items: center;
+}
+
+.redes a{
+    text-decoration: none;
+
+}

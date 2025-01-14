@@ -1,0 +1,84 @@
+.duvidas input{
+    display: none;
+}
+.seta{
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #0000;
+    display: inline-block;
+    transform: translate(1em, -0.2em) rotateZ(45deg);
+    border-right: .15em  solid;
+    border-bottom: .15em  solid;
+    transition: transform 1s ease-in-out;
+}
+.perguntas_respostas:has(input:checked) .seta{
+    transform: translate(1em, -0.2em) rotateX(180deg) rotateZ(45deg);
+    transition: transform .25s ease-in-out;
+
+}
+
+.duvidas_titulo, .duvidas_perguntas{
+    font-weight: 600;
+    padding: 0.5em 1em;
+}
+label{
+    display: inline-block;
+}
+.espaço-resposta{
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
+.perguntas_respostas:has(input:checked) .espaço-resposta{
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.duvidas_titulo{
+    font-size: 1.5em;
+    display: block;
+}
+.duvidas_perguntas{
+    font-size: 1.2em;
+    display: block;
+}
+
+.duvidas_respostas{
+    font-size: 1em;
+    padding: 0.5em 1em;
+    line-height: 1.2em;
+
+}
+.duvidas_respostas_itens{
+    padding: 0 1em;
+    line-height: 1.25em;
+
+}
+.duvidas_respostas a,.duvidas_respostas_itens a{
+    color: var(--cor-primaria-clarissima);
+}
+
+.duvidas_fontes{
+    padding: 1em 2em;
+    text-align: end;
+}
+.duvidas_fontes, .duvidas_fontes a{
+    color: var(--cor-primaria-clarissima);
+    font-weight: 200;
+    text-decoration: none;
+}
+.primario{
+    background: var(--cor-primaria-escurissima);
+    border-radius: 1em;
+    padding: 0 .3em;
+}
+.secundario{
+    background: var(--cor-secundaria-escurissima);
+    border-radius: 1em;
+    padding: 0 .3em;
+}
+.terciario{
+    background:var(--cor-terciaria-escurissima);
+    border-radius: 1em;
+    padding: 0 .3em;
+}

@@ -1,0 +1,10 @@
+.endereco_titulo{
+    font-weight: 600;
+    margin: 0.5em 1em;
+    font-size: 1.5em;
+}
+.endereco iframe{
+    width: 70vw;
+    margin-left: 14vw;
+    height: 60vw;
+}

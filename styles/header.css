@@ -1,0 +1,116 @@
+#whatsapp{
+    margin-right: 1rem;
+}
+/* Menu hamburguer */
+div .menu{
+    display: inline-block;
+    z-index: 998;
+}
+header{
+    .menu-container, .menu-container *{
+        box-sizing: border-box;
+    }
+    .menu-container{
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        position: relative;
+        margin: 0 1em;
+    }
+    .menu-container .line{
+        height: 28px;
+        width: 28px;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        transition: transform 250ms ease-in-out;
+    }
+    .menu-container .line-inner{
+        height: 4px;
+        width: 28px;
+        background: var(--branco);
+        border-radius: 4px;
+        position: absolute;
+        transition: transform 250ms ease-in-out;
+    }
+    .menu-container .line-inner-1{
+        top: 12px;
+        transform: translateY(-5px);
+    }
+    .menu-container .line-inner-2{
+        bottom: 12px;
+        transform: translateY(5px);
+    }
+    .menu-container.active .line-1{
+        transform: rotateZ(45deg);
+    }
+    .menu-container.active .line-2{
+        transform: rotateZ(-45deg);
+    }
+    .menu-container.active .line-inner{
+        transform:none;
+    }
+}
+.cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    width: 100vw;
+    background: linear-gradient(180deg, var(--preto) 0%, var(--preto) 80%,#00000000 100%);
+    z-index: 999;
+}
+.cabeçalho:has(.menu-container.active){
+
+    background: var(--preto);
+}
+
+.cabeçalho .container-2{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+ul.lista-menu {
+    visibility:hidden;
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    height: 80vh;
+    background-color: var(--preto);
+    z-index: 999;
+    padding-top: 0.7em;
+    transition: all 0.300s ease-in-out;
+    opacity: 0%;
+}
+
+header:has(.menu-container.active) .lista-menu{
+    visibility: visible;
+    opacity: 100%;
+    height: calc(100vh - 42.3224px);
+    transition: all 0.300s ease-in-out;
+}
+li:has(.lista-menu_item){
+    margin: 1.3em 1em 1em 1em ;
+    transition: all 0.3s ease-in-out;
+}
+
+li:has(.lista-menu_item):hover{
+    margin: 1.3em 1em 1em 0em;
+    padding-left: 2em;
+}
+
+a.lista-menu_item:visited,a.lista-menu_item{
+    color: var(--branco);
+    font-size: 1.6em;
+    font-weight:700;
+    text-decoration: none;
+    background-clip: text;
+}
+a.lista-menu_item:visited,a.lista-menu_item{
+    color: var(--branco);
+    transition: color 0.5s ease-in-out;
+}
+li:has(.lista-menu_item):hover :is(a.lista-menu_item:visited,a.lista-menu_item:hover){
+    color: var(--cor-primaria-clarissima);
+    transition: color 0.5s ease-in-out;
+}

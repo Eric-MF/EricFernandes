@@ -1,0 +1,24 @@
+.banner{
+    background: var(--primaria-degrade);
+    text-align: center;
+    width: cal(100vw-2em);
+    padding: 2.5em 2em;
+    position:relative;
+    z-index: 0;
+}
+.banner_titulo{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.banner_texto{
+    font-size: 0.875em;
+    font-weight: 400;
+    width: 100%;
+    margin: 1em 0 0 0;
+}
+.banner_img{
+    padding: 2vw;
+    width: 96vw;
+    z-index: -999;
+    margin: 3em 0 -8em;
+}
