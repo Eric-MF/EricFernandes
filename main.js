@@ -30,7 +30,7 @@ if(iOS()){
 // rue or false
 function trocar_mensagem(){
     var mensagem = document.getElementById("whatsapp-menu");
-    mensagem.setAttribute('href','https://api.whatsapp.com/send?phone=55229988154&text=Ol%C3%A1,%20Eric!%20Ser%C3%A1%20que%20voc%C3%AA%20pode%20me%20ajudar%20com%20uma%20quest%C3%A3o?');
+    mensagem.setAttribute('href','https://api.whatsapp.com/send?phone=5522998815479&text=Ol%C3%A1,%20Eric!%20Ser%C3%A1%20que%20voc%C3%AA%20pode%20me%20ajudar%20com%20uma%20quest%C3%A3o?');
     var mensagem = document.getElementById("whatsapp-contato");
-    mensagem.setAttribute('href','https://api.whatsapp.com/send?phone=55229988154&text=Ol%C3%A1,%20Eric!%20Ser%C3%A1%20que%20voc%C3%AA%20pode%20me%20ajudar%20com%20uma%20quest%C3%A3o?');
+    mensagem.setAttribute('href','https://api.whatsapp.com/send?phone=5522998815479&text=Ol%C3%A1,%20Eric!%20Ser%C3%A1%20que%20voc%C3%AA%20pode%20me%20ajudar%20com%20uma%20quest%C3%A3o?');
 };
