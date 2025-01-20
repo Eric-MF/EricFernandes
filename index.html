@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" href="img/Logo.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="img/Logo.ico" sizes="144x144" type="image/svg+xml">
+    <link rel="icon" href="img/Logo24x24.ico" sizes="24x24" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -43,153 +45,158 @@
             <li><a class="lista-menu_item" href="#endereco">Endereço</a></li>
         </ul>
     </header>
-    <img class="banner_img"src="img/Eric.webp">
-    <section class="banner">
-        <h2 class="banner_titulo">
-            Eric Fernandes
-        </h2>
-        <p class="banner_texto">
-            Advogado, com foco em Advocacia Previdencialista, atualmente curso Ciência da Computação.
-        </p>
-    </section>
-    <section id="sobre" class="sobre">
-        <div class="sobre_subsecao">
-            <h2 class="sobre_titulo">Quem é Eric?</h2>
-            <p class="sobre_texto">
-                Tenho experiência com <span class="sobre_texto_destaque_1">Direito Previdenciário</span>. Busco conseguir integrar o Direito à Tecnologia, trazendo a <span class="sobre_texto_destaque_2">prática jurídica conciliada à inovação</span>.
-            </p>
-        </div>
-    </section>
-    <section id="duvidas" class="duvidas">
-        <h2 class="duvidas_titulo">
-            Dúvidas:
-        </h2>
-        <div class="perguntas_respostas">
-            <input id="p1" type="checkbox">
-            <label for="p1">
-                <h3 class="duvidas_perguntas"><div class="seta"></div> Qual é a idade mínima para se aposentar?</h3>
-            </label>
-            <div class="espaço-resposta">
-                <p class="duvidas_respostas">Atualmente, no Regime Geral, as <span class="primario">mulheres</span> podem se aposentar com no mínimo <span class="primario">62 anos e 15 anos de contribuição</span>, já os <span class="terciario">homens</span> no mínimo <span class="terciario">65 anos e 20 anos de contribuição</span>.</p>
-                <p class="duvidas_respostas">Importante ressaltar que existem regras de transição que podem alterar os valores.</p>
-                <p class="duvidas_fontes">Fonte: <a href="https://www.gov.br/inss/pt-br/noticias/ajustes-na-idade-minima-e-nas-regras-de-transicao-para-pedir-aposentadoria-ja-estao-em-vigor-confira#:~:text=Conforme%20a%20regra%20atual%20para,idade%20e%2020%20de%20contribui%C3%A7%C3%A3o">https://www.gov.br</a></p>
+    <main>
+        <section class="container-banner">
+            <img class="banner_img"src="img/Eric.webp">
+            <div class="banner">
+                <h2 class="banner_titulo">
+                    Eric Fernandes
+                </h2>
+                <p class="banner_texto">
+                    Advogado, com foco em <span title="Advogado para aposentadoria">Advocacia Previdencialista</span>, atualmente curso Ciência da Computação.
+                </p>
             </div>
+        </section>
+        <div id="direita" class="direita">
+            <section id="sobre" class="sobre">
+                <div class="sobre_subsecao">
+                    <h2 class="sobre_titulo">Quem é Eric?</h2>
+                    <p class="sobre_texto">
+                        Tenho experiência com <span class="sobre_texto_destaque_1" title="Direito para aposentaria">Direito Previdenciário</span>. Busco integrar o Direito à Tecnologia, trazendo a <span class="sobre_texto_destaque_2">prática jurídica conciliada à inovação</span>.
+                    </p>
+                </div>
+            </section>
+            <section id="duvidas" class="duvidas">
+                <h2 class="duvidas_titulo">
+                    Dúvidas:
+                </h2>
+                <div class="perguntas_respostas">
+                    <input id="p1" type="checkbox" checked>
+                    <label for="p1">
+                        <h3 class="duvidas_perguntas"><div class="seta"></div> Qual é a idade mínima para se aposentar?</h3>
+                    </label>
+                    <div class="espaço-resposta">
+                        <p class="duvidas_respostas">Atualmente, no Regime Geral, as <span class="primario">mulheres</span> podem se aposentar com no mínimo <span class="primario">62 anos e 15 anos de contribuição</span>, já os <span class="terciario">homens</span> no mínimo <span class="terciario">65 anos e 20 anos de contribuição</span>.</p>
+                        <p class="duvidas_respostas">Importante ressaltar que existem regras de transição que podem alterar os valores.</p>
+                        <p class="duvidas_fontes">Fonte: <a href="https://www.gov.br/inss/pt-br/noticias/ajustes-na-idade-minima-e-nas-regras-de-transicao-para-pedir-aposentadoria-ja-estao-em-vigor-confira#:~:text=Conforme%20a%20regra%20atual%20para,idade%20e%2020%20de%20contribui%C3%A7%C3%A3o">https://www.gov.br</a></p>
+                    </div>
+                </div>
+                <div class="perguntas_respostas">
+                    <input id="p2" type="checkbox">
+                    <label for="p2">
+                        <h3 class="duvidas_perguntas"><div class="seta"></div>Como a pessoa se aposenta?</h3>
+                    </label>
+                    <div class="espaço-resposta">
+                        <p class="duvidas_respostas">Para se aposentar, as pessoas que atendam aos requisitos mínimos, tem que realizar duas etapas:</p>
+                        <p class="duvidas_respostas">1- Pedir benefício através do <a class="primario" href="http://gov.br/meuinss">site</a> ou aplicativo <a class="secundario" href="https://play.google.com/store/apps/details?id=br.gov.dataprev.meuinss&hl=pt_BR">Android</a> ou <a class="terciario" href="https://apps.apple.com/br/app/meu-inss-central-de-servi%C3%A7os/id1243048358">IOS</a> do Meu INSS, confirmando o serviço, requerente, unidade e as relações;</p>
+                        <p class="duvidas_respostas">2- Consultar, após a etapa anterior, a resposta do pedido de aposentadoria que demora apróximadamente 45 dias, sendo informada pelos mesmos meios de pedido.</p>
+                        <p class="duvidas_fontes">Fonte: <a href="https://www.gov.br/pt-br/servicos/solicitar-aposentadoria-por-idade-trabalhador-urbano#:~:text=Servi%C3%A7o%20para%20pedir%20benef%C3%ADcio%20de,anos%20de%20idade%2C%20se%20mulher">https://www.gov.br</a></p>
+                    </div>
+                </div>
+                <div class="perguntas_respostas">
+                    <input id="p3" type="checkbox">
+                    <label for="p3">
+                        <h3 class="duvidas_perguntas"><div class="seta"></div>Quais são os tipos de aposentadoria?</h3>
+                    </label>
+                    <div class="espaço-resposta">
+                        <p class="duvidas_respostas">Atualmente, as modalidades de aposentadoria são:</p>
+                        <p class="duvidas_respostas_itens">1 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20II-,Da%20Aposentadoria%20por%20Idade,-Art.%2048.%C2%A0A">Aposentadoria por idade</a></p> 
+                        <p class="duvidas_respostas_itens">1.1 - Aposentadoria idade <span class="primario">urbana</span></p>
+                        <p class="duvidas_respostas_itens">1.2 - Aposentadoria idade <span class="secundario">rural</span></p>
+                        <p class="duvidas_respostas_itens">1.3 - Aposentadoria idade <span class="terciario">híbrida</span></p>
+                        <p class="duvidas_respostas_itens">2 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20IV-,Da%20Aposentadoria%20Especial,-Art.%C2%A057.%C2%A0A">Aposentadoria especial</a></p>
+                        <p class="duvidas_respostas_itens">3 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20I-,Da%20Aposentadoria%20por%20Invalidez,-Art.%2042.%C2%A0A">Aposentadoria por invalidez</a></p>
+                        <p class="duvidas_respostas_itens">4 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20III-,Da%20Aposentadoria%20por%20Tempo%20de%20Servi%C3%A7o,-Art.%2052.%C2%A0A">Aposentadoria por tempo de contribuição</a></p>
+                        <p class="duvidas_respostas_itens">5 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Art.%C2%A056.%C2%A0O,III%20deste%20Cap%C3%ADtulo.">Aposentadoria do professor</a></p>
+                        <p class="duvidas_respostas_itens">6 - <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp142.htm#:~:text=no%20tocante%20%C3%A0-,aposentadoria%20da%20pessoa%20com%20defici%C3%AAncia,-segurada%20do%20Regime">Aposentadoria da pessoa com deficiência</a></p>
+                    </div>
+                </div>
+                <div class="perguntas_respostas">
+                    <input id="p4" type="checkbox">
+                    <label for="p4">
+                        <h3 class="duvidas_perguntas"><div class="seta"></div> Porque contratar um advogado para aposentadoria?</h3>
+                    </label>
+                    <div class="espaço-resposta">
+                        <p class="duvidas_respostas">Apesar de não ser obrigatório na fase administrativa, contratar um advogado pode <span class="secundario">auxilia-lo a receber o melhor benefício possível</span>, pois, devido a fatores como as regras de transição e divergência de cálculos, um profissional irá garantir que saiba os seus direitos.</p>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="perguntas_respostas">
-            <input id="p2" type="checkbox">
-            <label for="p2">
-                <h3 class="duvidas_perguntas"><div class="seta"></div>Como a pessoa se aposenta?</h3>
-            </label>
-            <div class="espaço-resposta">
-                <p class="duvidas_respostas">Para se aposentar, as pessoas que atendam aos requisitos mínimos, tem que realizar duas etapas:</p>
-                <p class="duvidas_respostas">1- Pedir benefício através do <a class="primario" href="http://gov.br/meuinss">site</a> ou aplicativo <a class="secundario" href="https://play.google.com/store/apps/details?id=br.gov.dataprev.meuinss&hl=pt_BR">Android</a> ou <a class="terciario" href="https://apps.apple.com/br/app/meu-inss-central-de-servi%C3%A7os/id1243048358">IOS</a> do Meu INSS, confirmando o serviço, requerente, unidade e as relações;</p>
-                <p class="duvidas_respostas">2- Consultar, após a etapa anterior, a resposta do pedido de aposentadoria que demora apróximadamente 45 dias, sendo informada pelos mesmos meios de pedido.</p>
-                <p class="duvidas_fontes">Fonte: <a href="https://www.gov.br/pt-br/servicos/solicitar-aposentadoria-por-idade-trabalhador-urbano#:~:text=Servi%C3%A7o%20para%20pedir%20benef%C3%ADcio%20de,anos%20de%20idade%2C%20se%20mulher">https://www.gov.br</a></p>
-            </div>
-        </div>
-        <div class="perguntas_respostas">
-            <input id="p3" type="checkbox">
-            <label for="p3">
-                <h3 class="duvidas_perguntas"><div class="seta"></div>Quais são os tipos de aposentadoria?</h3>
-            </label>
-            <div class="espaço-resposta">
-                <p class="duvidas_respostas">Atualmente, as modalidades de aposentadoria são:</p>
-                <p class="duvidas_respostas_itens">1 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20II-,Da%20Aposentadoria%20por%20Idade,-Art.%2048.%C2%A0A">Aposentadoria por idade</a></p> 
-                <p class="duvidas_respostas_itens">1.1 - Aposentadoria idade <span class="primario">urbana</span></p>
-                <p class="duvidas_respostas_itens">1.2 - Aposentadoria idade <span class="secundario">rural</span></p>
-                <p class="duvidas_respostas_itens">1.3 - Aposentadoria idade <span class="terciario">híbrida</span></p>
-                <p class="duvidas_respostas_itens">2 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20IV-,Da%20Aposentadoria%20Especial,-Art.%C2%A057.%C2%A0A">Aposentadoria especial</a></p>
-                <p class="duvidas_respostas_itens">3 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20I-,Da%20Aposentadoria%20por%20Invalidez,-Art.%2042.%C2%A0A">Aposentadoria por invalidez</a></p>
-                <p class="duvidas_respostas_itens">4 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20III-,Da%20Aposentadoria%20por%20Tempo%20de%20Servi%C3%A7o,-Art.%2052.%C2%A0A">Aposentadoria por tempo de contribuição</a></p>
-                <p class="duvidas_respostas_itens">5 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Art.%C2%A056.%C2%A0O,III%20deste%20Cap%C3%ADtulo.">Aposentadoria do professor</a></p>
-                <p class="duvidas_respostas_itens">6 - <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp142.htm#:~:text=no%20tocante%20%C3%A0-,aposentadoria%20da%20pessoa%20com%20defici%C3%AAncia,-segurada%20do%20Regime">Aposentadoria da pessoa com deficiência</a></p>
-            </div>
-        </div>
-        <div class="perguntas_respostas">
-            <input id="p4" type="checkbox">
-            <label for="p4">
-                <h3 class="duvidas_perguntas"><div class="seta"></div> Porque contratar um advogado para aposentadoria?</h3>
-            </label>
-            <div class="espaço-resposta">
-                <p class="duvidas_respostas">Apesar de não ser obrigatório na fase administrativa, contratar um advogado pode <span class="secundario">auxilia-lo a receber o melhor benefício possível</span>, pois, devido a fatores como as regras de transição e divergência de cálculos, um profissional irá garantir que saiba os seus direitos.</p>
-            </div>
-        </div>
-    </section>
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">
-            Contato:
-        </h2>
-        <ul class="lista-contatos">
-            <li class="lista-contatos-email">
-                <a href="mailto:ericmf@adv.oabrj.org.br">
-                    <svg  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <path id="Email" d="M155.395,182C90.58,182 37.395,235.186 37.395,300L37.395,724C37.395,788.814 90.58,842 155.395,842L868.605,842C933.42,842 986.605,788.814 986.605,724L986.605,300C986.605,235.186 933.42,182 868.605,182L155.395,182ZM155.395,242L868.605,242C872.27,242 875.831,242.372 879.295,243C849.797,309.194 802.025,367.569 742.756,409.141C675.828,456.084 593.749,482 512,482C430.251,482 348.172,456.084 281.244,409.141C221.975,367.569 174.203,309.194 144.705,243C148.169,242.372 151.73,242 155.395,242ZM99.004,286.752C133.213,354.904 184.231,414.386 246.789,458.264C324.033,512.442 417.65,542 512,542C606.35,542 699.967,512.442 777.211,458.264C839.769,414.386 890.787,354.904 924.996,286.752C925.97,291.014 926.605,295.412 926.605,300L926.605,724C926.605,756.388 900.993,782 868.605,782L155.395,782C123.007,782 97.395,756.388 97.395,724L97.395,300C97.395,295.412 98.03,291.014 99.004,286.752Z" style="fill-rule:nonzero;"/>
-                    </svg>
-                    <span class="contato_descricao">ericmf@adv.oabrj.org.br</span>
-                </a>
-            </li>
-            <li class="lista-contatos-telefone">
-                <a href="tel:5522998815479">
-                    <svg  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <g id="Telefone" transform="matrix(0.689617,0.88836,-0.88836,0.689617,510.772,-217.641)">
-                            <path d="M363,318.83C348.362,319.214 333.708,319.716 319.082,319C288.736,317.514 258.856,310.8 228.544,308.743C198.231,306.686 166.269,309.766 140.639,326.081C123.884,336.747 110.833,352.486 100.769,369.61C90.705,386.733 83.423,405.32 76.23,423.833C70.727,437.998 65.217,452.294 62.715,467.282C60.214,482.27 60.905,498.188 67.415,511.918C74.419,526.691 87.823,537.921 103,544C123.711,552.296 146.744,551.434 169,553C180.978,553.843 192.942,555.424 204.944,555.049C216.945,554.674 229.198,552.198 239.229,545.598C250.906,537.914 258.577,525.26 263,512C266.14,502.587 267.82,492.76 270.27,483.145C272.721,473.53 276.041,463.934 282,456C291.06,443.938 305.217,436.944 319.082,431C379.885,404.934 445.759,390.757 511.902,389.502C578.054,390.171 644.05,403.765 705.082,429.292C718.999,435.113 733.217,441.982 742.383,453.963C748.413,461.844 751.817,471.41 754.353,481.003C756.888,490.596 758.655,500.408 761.878,509.793C766.418,523.013 774.201,535.598 785.946,543.179C796.035,549.69 808.309,552.058 820.313,552.326C832.318,552.595 844.267,550.908 856.237,549.959C878.479,548.196 901.518,548.855 922.155,540.376C937.277,534.162 950.582,522.814 957.455,507.98C963.843,494.192 964.393,478.27 961.759,463.304C959.125,448.338 953.488,434.092 947.86,419.977C940.504,401.527 933.058,383.006 922.843,365.972C912.628,348.939 899.438,333.315 882.589,322.798C856.816,306.711 824.828,303.914 794.535,306.239C764.242,308.564 734.422,315.542 704.091,317.296C689.472,318.142 674.814,317.769 660.173,317.515C611.255,318.249 562.612,314.007 514.845,313.846C463.044,313.671 412.263,317.588 363,318.83Z" />
-                        </g>
-                    </svg>
-                    <span class="contato_descricao">+55 22 99881-5479</span>
-                </a>
-            </li>
-        </ul>
-        <div class="contatos-linha"></div>
-            <div class="redes">
-                <a href="https://www.facebook.com/profile.php?id=61571819128462">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" height="3em" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 14222 14222">
-                        <defs>
-                         <style type="text/css">
-                           .fil0 {fill:#1977F3;fill-rule:nonzero}
-                           .fil1 {fill:#FEFEFE;fill-rule:nonzero}
-                         </style>
-                        </defs>
-                        <g id="Layer_x0020_1">
-                         <metadata id="CorelCorpID_0Corel-Layer"/>
-                         <path class="fil0" d="M14222 7111c0,-3927 -3184,-7111 -7111,-7111 -3927,0 -7111,3184 -7111,7111 0,3549 2600,6491 6000,7025l0 -4969 -1806 0 0 -2056 1806 0 0 -1567c0,-1782 1062,-2767 2686,-2767 778,0 1592,139 1592,139l0 1750 -897 0c-883,0 -1159,548 -1159,1111l0 1334 1972 0 -315 2056 -1657 0 0 4969c3400,-533 6000,-3475 6000,-7025z"/>
-                         <path class="fil1" d="M9879 9167l315 -2056 -1972 0 0 -1334c0,-562 275,-1111 1159,-1111l897 0 0 -1750c0,0 -814,-139 -1592,-139 -1624,0 -2686,984 -2686,2767l0 1567 -1806 0 0 2056 1806 0 0 4969c362,57 733,86 1111,86 378,0 749,-30 1111,-86l0 -4969 1657 0z"/>
-                        </g>
-                       </svg>
-                </a>
-                <a href="https://www.instagram.com/eric.advogado/">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" height="3em" viewBox="0 0 264.5833 264.5833" inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)" sodipodi:docname="Instagram_(2022).svg"><defs><radialGradient id="f" cx="158.429" cy="578.088" r="52.3515" xlink:href="#a" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 -4.03418 4.28018 0 -2332.2273 942.2356)" fx="158.429" fy="578.088"/><radialGradient inkscape:collect="always" xlink:href="#b" id="g" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.67441 -1.16203 1.51283 .87801 -814.3657 -47.8354)" cx="172.6149" cy="600.6924" fx="172.6149" fy="600.6924" r="65"/><radialGradient inkscape:collect="always" xlink:href="#c" id="h" cx="144.012" cy="51.3367" fx="144.012" fy="51.3367" r="67.081" gradientTransform="matrix(-2.3989 .67549 -.23008 -.81732 464.9957 -26.4035)" gradientUnits="userSpaceOnUse"/><radialGradient inkscape:collect="always" xlink:href="#d" id="e" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-3.10797 .87652 -.6315 -2.23914 1345.6503 1374.1983)" cx="199.7884" cy="628.4379" fx="199.7884" fy="628.4379" r="52.3515"/><linearGradient inkscape:collect="always" id="d"><stop offset="0" stop-color="#ff005f"/><stop offset="1" stop-color="#fc01d8"/></linearGradient><linearGradient id="c"><stop offset="0" stop-color="#780cff"/><stop stop-color="#820bff" offset="1" stop-opacity="0"/></linearGradient><linearGradient inkscape:collect="always" id="b"><stop offset="0" stop-color="#fc0"/><stop offset="1" stop-color="#fc0" stop-opacity="0"/></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fc0"/><stop offset=".1242" stop-color="#fc0"/><stop offset=".5672" stop-color="#fe4a05"/><stop offset=".6942" stop-color="#ff0f3f"/><stop offset="1" stop-color="#fe0657" stop-opacity="0"/></linearGradient></defs><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:zoom=".515" inkscape:cx="500" inkscape:cy="500" inkscape:document-units="mm" inkscape:current-layer="layer1" inkscape:document-rotation="0" showgrid="false" inkscape:window-width="1366" inkscape:window-height="705" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1"/><g inkscape:label="Layer 1" inkscape:groupmode="layer"><path d="M204.1503 18.1429c-55.2305 0-71.3834.057-74.5232.3175-11.3342.9424-18.387 2.7275-26.0708 6.554-5.9214 2.9413-10.5915 6.3506-15.2005 11.1298-8.3938 8.7157-13.481 19.4383-15.3226 32.1842-.8953 6.1877-1.1558 7.4496-1.2087 39.0558-.0203 10.5354 0 24.4007 0 42.9984 0 55.2008.061 71.3418.3256 74.4764.9157 11.032 2.6453 17.9728 6.3081 25.565 7 14.5329 20.369 25.4428 36.119 29.5137 5.4535 1.4044 11.4767 2.1779 19.2092 2.5442 3.2762.1425 36.6684.2443 70.081.2443 33.4127 0 66.8253-.0407 70.02-.2035 8.9535-.4214 14.1526-1.1195 19.9011-2.6054 15.8517-4.0912 28.9767-14.8383 36.119-29.5748 3.5916-7.409 5.4128-14.6144 6.237-25.0704.179-2.2796.2543-38.6263.2543-74.924 0-36.304-.0814-72.5835-.2605-74.8632-.8343-10.6249-2.6555-17.7692-6.363-25.3207-3.0421-6.1816-6.42-10.798-11.324-15.518-8.752-8.3616-19.4555-13.4502-32.2101-15.2902-6.18-.8936-7.411-1.1582-39.033-1.2131z" inkscape:connector-curvature="0" fill="url(#e)" transform="translate(-71.8155 -18.1429)"/><path d="M204.1503 18.1429c-55.2305 0-71.3834.057-74.5232.3175-11.3342.9424-18.387 2.7275-26.0708 6.554-5.9214 2.9413-10.5915 6.3506-15.2005 11.1298-8.3938 8.7157-13.481 19.4383-15.3226 32.1842-.8953 6.1877-1.1558 7.4496-1.2087 39.0558-.0203 10.5354 0 24.4007 0 42.9984 0 55.2008.061 71.3418.3256 74.4764.9157 11.032 2.6453 17.9728 6.3081 25.565 7 14.5329 20.369 25.4428 36.119 29.5137 5.4535 1.4044 11.4767 2.1779 19.2092 2.5442 3.2762.1425 36.6684.2443 70.081.2443 33.4127 0 66.8253-.0407 70.02-.2035 8.9535-.4214 14.1526-1.1195 19.9011-2.6054 15.8517-4.0912 28.9767-14.8383 36.119-29.5748 3.5916-7.409 5.4128-14.6144 6.237-25.0704.179-2.2796.2543-38.6263.2543-74.924 0-36.304-.0814-72.5835-.2605-74.8632-.8343-10.6249-2.6555-17.7692-6.363-25.3207-3.0421-6.1816-6.42-10.798-11.324-15.518-8.752-8.3616-19.4555-13.4502-32.2101-15.2902-6.18-.8936-7.411-1.1582-39.033-1.2131z" inkscape:connector-curvature="0" fill="url(#f)" transform="translate(-71.8155 -18.1429)"/><path d="M204.1503 18.1429c-55.2305 0-71.3834.057-74.5232.3175-11.3342.9424-18.387 2.7275-26.0708 6.554-5.9214 2.9413-10.5915 6.3506-15.2005 11.1298-8.3938 8.7157-13.481 19.4383-15.3226 32.1842-.8953 6.1877-1.1558 7.4496-1.2087 39.0558-.0203 10.5354 0 24.4007 0 42.9984 0 55.2008.061 71.3418.3256 74.4764.9157 11.032 2.6453 17.9728 6.3081 25.565 7 14.5329 20.369 25.4428 36.119 29.5137 5.4535 1.4044 11.4767 2.1779 19.2092 2.5442 3.2762.1425 36.6684.2443 70.081.2443 33.4127 0 66.8253-.0407 70.02-.2035 8.9535-.4214 14.1526-1.1195 19.9011-2.6054 15.8517-4.0912 28.9767-14.8383 36.119-29.5748 3.5916-7.409 5.4128-14.6144 6.237-25.0704.179-2.2796.2543-38.6263.2543-74.924 0-36.304-.0814-72.5835-.2605-74.8632-.8343-10.6249-2.6555-17.7692-6.363-25.3207-3.0421-6.1816-6.42-10.798-11.324-15.518-8.752-8.3616-19.4555-13.4502-32.2101-15.2902-6.18-.8936-7.411-1.1582-39.033-1.2131z" inkscape:connector-curvature="0" fill="url(#g)" transform="translate(-71.8155 -18.1429)"/><path d="M204.1503 18.1429c-55.2305 0-71.3834.057-74.5232.3175-11.3342.9424-18.387 2.7275-26.0708 6.554-5.9214 2.9413-10.5915 6.3506-15.2005 11.1298-8.3938 8.7157-13.481 19.4383-15.3226 32.1842-.8953 6.1877-1.1558 7.4496-1.2087 39.0558-.0203 10.5354 0 24.4007 0 42.9984 0 55.2008.061 71.3418.3256 74.4764.9157 11.032 2.6453 17.9728 6.3081 25.565 7 14.5329 20.369 25.4428 36.119 29.5137 5.4535 1.4044 11.4767 2.1779 19.2092 2.5442 3.2762.1425 36.6684.2443 70.081.2443 33.4127 0 66.8253-.0407 70.02-.2035 8.9535-.4214 14.1526-1.1195 19.9011-2.6054 15.8517-4.0912 28.9767-14.8383 36.119-29.5748 3.5916-7.409 5.4128-14.6144 6.237-25.0704.179-2.2796.2543-38.6263.2543-74.924 0-36.304-.0814-72.5835-.2605-74.8632-.8343-10.6249-2.6555-17.7692-6.363-25.3207-3.0421-6.1816-6.42-10.798-11.324-15.518-8.752-8.3616-19.4555-13.4502-32.2101-15.2902-6.18-.8936-7.411-1.1582-39.033-1.2131z" inkscape:connector-curvature="0" fill="url(#h)" transform="translate(-71.8155 -18.1429)"/><path d="M132.3452 33.973c-26.7167 0-30.0696.1167-40.5629.5939-10.4727.4792-17.6212 2.136-23.8762 4.567-6.4701 2.5107-11.9586 5.8693-17.4265 11.3352-5.472 5.464-8.8332 10.9483-11.354 17.4116-2.4389 6.2524-4.099 13.3976-4.5703 23.8585-.4693 10.4854-.5923 13.8379-.5923 40.5348 0 26.697.1189 30.0371.5943 40.5225.4817 10.465 2.1397 17.6082 4.5703 23.8585 2.5147 6.4654 5.8758 11.9497 11.3458 17.4136 5.466 5.468 10.9544 8.8349 17.4204 11.3456 6.259 2.4309 13.4097 4.0877 23.8803 4.567 10.4933.477 13.8441.5938 40.5588.5938 26.7188 0 30.0615-.1167 40.5547-.5939 10.4728-.4792 17.6295-2.136 23.8885-4.567 6.4681-2.5106 11.9484-5.8775 17.4143-11.3455 5.472-5.4639 8.8332-10.9482 11.354-17.4115 2.4183-6.2524 4.0784-13.3976 4.5703-23.8585.4713-10.4854.5943-13.8277.5943-40.5246 0-26.697-.123-30.0473-.5943-40.5328-.4919-10.465-2.152-17.6081-4.5703-23.8584-2.5208-6.4654-5.882-11.9498-11.354-17.4137-5.4721-5.468-10.9442-8.8266-17.4204-11.3353-6.2714-2.4309-13.424-4.0877-23.8967-4.5669-10.4933-.4772-13.8339-.5939-40.5588-.5939zm-8.825 17.7147c2.6193-.0041 5.5418 0 8.825 0 26.2659 0 29.379.0942 39.7513.5652 9.5915.4383 14.7971 2.0397 18.2648 3.3852 4.5908 1.7817 7.8638 3.9116 11.3048 7.3521 3.4431 3.4406 5.5745 6.7173 7.3617 11.3046 1.3465 3.461 2.9512 8.6628 3.3877 18.2472.4714 10.3625.5739 13.4754.5739 39.7095 0 26.234-.1025 29.347-.5739 39.7095-.4386 9.5843-2.0412 14.7861-3.3877 18.2471-1.783 4.5874-3.9186 7.8539-7.3617 11.2923-3.443 3.4406-6.712 5.5704-11.3048 7.3521-3.4636 1.3517-8.6733 2.949-18.2648 3.3873-10.3702.471-13.4854.5734-39.7513.5734-26.2679 0-29.381-.1024-39.7513-.5734-9.5914-.4423-14.797-2.0438-18.2668-3.3893-4.5908-1.7817-7.87-3.9116-11.313-7.3521-3.4431-3.4405-5.5745-6.709-7.3617-11.2985-1.3465-3.461-2.9512-8.6628-3.3877-18.2471-.4714-10.3626-.5657-13.4754-.5657-39.7259 0-26.2504.0943-29.347.5657-39.7095.4386-9.5844 2.0412-14.7861 3.3877-18.2512 1.783-4.5874 3.9186-7.8641 7.3617-11.3046 3.443-3.4406 6.7222-5.5704 11.313-7.3562 3.4677-1.3517 8.6754-2.949 18.2668-3.3894 9.075-.4096 12.5919-.5324 30.9264-.553zm61.3363 16.322c-6.5173 0-11.805 5.2776-11.805 11.792 0 6.5125 5.2877 11.7962 11.805 11.7962 6.5172 0 11.8049-5.2837 11.8049-11.7962 0-6.5124-5.2877-11.796-11.805-11.796zm-52.5113 13.7826c-27.8993 0-50.5191 22.6031-50.5191 50.4817 0 27.8786 22.6198 50.4714 50.5191 50.4714s50.511-22.5928 50.511-50.4714c0-27.8786-22.6137-50.4817-50.513-50.4817zm0 17.7147c18.109 0 32.7914 14.6694 32.7914 32.767 0 18.0956-14.6824 32.767-32.7914 32.767-18.111 0-32.7913-14.6714-32.7913-32.767 0-18.0976 14.6803-32.767 32.7913-32.767z" inkscape:connector-curvature="0" fill="#fff"/></g></svg>
-                </a>
-                <a href="https://www.threads.net/@eric.advogado">
-                    <svg height="3em" xmlns="http://www.w3.org/2000/svg" aria-label="Threads" viewBox="0 0 192 192"><path class="x19hqcy" d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"/></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/adv-eric">
-                    <svg height="3em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" focusable="false">
-                        <path fill="#0a66c2"d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                      </svg>
-                </a>
-                <a href="https://github.com/Eric-MF">
-                    <svg height="3em" aria-hidden="true" viewBox="0 0 24 24" version="1.1" data-view-component="true" class="octicon octicon-mark-github">
-                        <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
-                    </svg>
-                </a>
-                <a id="whatsapp-contato" href="https://api.whatsapp.com/send?phone=5522998815479&text=Ol%C3%A1,%20Eric!%20Saberia%20me%20esclarecer%20uma%20quest%C3%A3o?">
-                    <svg alt="Logo WhatsApp" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 31 31" fill="none"><path d="M30.3139 14.8011C30.1739 10.9697 28.5594 7.34056 25.8073 4.67136C23.0552 2.00216 19.3784 0.499287 15.5446 0.476567H15.4722C12.8904 0.474649 10.3527 1.14494 8.10857 2.42148C5.86449 3.69802 3.99142 5.53682 2.67367 7.75695C1.35592 9.97709 0.6389 12.5021 0.593155 15.0834C0.547411 17.6648 1.17452 20.2135 2.41278 22.479L1.09794 30.3469C1.0958 30.363 1.09712 30.3794 1.10182 30.395C1.10651 30.4106 1.11448 30.425 1.12518 30.4373C1.13588 30.4496 1.14907 30.4594 1.16387 30.4662C1.17867 30.473 1.19475 30.4765 1.21103 30.4766H1.23365L9.01561 28.7456C11.0263 29.7109 13.2282 30.2118 15.4586 30.2112C15.6004 30.2112 15.7421 30.2112 15.8838 30.2112C17.8458 30.1552 19.7773 29.7112 21.5667 28.9048C23.3562 28.0984 24.9682 26.9456 26.3098 25.5129C27.6514 24.0802 28.696 22.396 29.3832 20.5574C30.0704 18.7189 30.3867 16.7625 30.3139 14.8011V14.8011ZM15.8099 27.6252C15.6923 27.6252 15.5747 27.6252 15.4586 27.6252C13.4874 27.6277 11.5444 27.156 9.79366 26.2501L9.39559 26.042L4.11815 27.289L5.09221 21.9497L4.86604 21.5667C3.78579 19.725 3.20393 17.6336 3.17778 15.4985C3.15163 13.3635 3.68208 11.2584 4.71689 9.39075C5.75171 7.52306 7.25518 5.95715 9.07924 4.84724C10.9033 3.73732 12.985 3.1217 15.1194 3.06101C15.238 3.06101 15.3571 3.06101 15.4767 3.06101C18.6992 3.07056 21.7889 4.34564 24.0802 6.61154C26.3715 8.87743 27.681 11.9528 27.7265 15.1749C27.7719 18.3971 26.5498 21.5081 24.3234 23.8378C22.0969 26.1675 19.0444 27.5293 15.8235 27.6298L15.8099 27.6252Z" fill="#25D366"/><path d="M10.2894 8.16663C10.1057 8.17022 9.92456 8.21063 9.75673 8.28548C9.5889 8.36033 9.43779 8.4681 9.31236 8.6024C8.95801 8.96579 7.96736 9.84034 7.91006 11.6769C7.85277 13.5134 9.13594 15.3304 9.31537 15.5852C9.49481 15.84 11.7686 19.8072 15.5141 21.416C17.7156 22.3645 18.6806 22.5273 19.3063 22.5273C19.5642 22.5273 19.7587 22.5002 19.9622 22.4881C20.6483 22.4459 22.1969 21.6528 22.5346 20.7903C22.8724 19.9278 22.895 19.1739 22.806 19.0231C22.7171 18.8723 22.4728 18.7637 22.1049 18.5707C21.737 18.3777 19.9321 17.4127 19.5928 17.277C19.467 17.2184 19.3316 17.1832 19.1932 17.173C19.1031 17.1777 19.0155 17.2043 18.938 17.2506C18.8605 17.2968 18.7954 17.3613 18.7484 17.4383C18.4469 17.8138 17.7548 18.6295 17.5225 18.8648C17.4718 18.9232 17.4093 18.9703 17.3392 19.0031C17.2691 19.0358 17.1928 19.0534 17.1154 19.0548C16.9728 19.0485 16.8333 19.0109 16.7068 18.9447C15.6135 18.4804 14.6167 17.8155 13.768 16.9845C12.975 16.2029 12.3022 15.3081 11.7716 14.3292C11.5666 13.9492 11.7716 13.7532 11.9586 13.5753C12.1456 13.3973 12.3461 13.1516 12.5391 12.9389C12.6975 12.7573 12.8295 12.5543 12.9312 12.3358C12.9838 12.2344 13.0104 12.1215 13.0085 12.0073C13.0067 11.893 12.9765 11.7811 12.9206 11.6814C12.8317 11.4914 12.1667 9.62321 11.8546 8.87381C11.6013 8.23298 11.2997 8.21187 11.0358 8.19227C10.8187 8.17719 10.5699 8.16965 10.3211 8.16211H10.2894" fill="#25D366"/></svg>
-                </a>
-            </div>
-        
-
-    </section>
-    <section id="endereco" class="endereco">
-        <h2 class="endereco_titulo">
-            Endereço:
-        </h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.2960492782904!2d-41.33101652538107!3d-21.7606137979147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdd449b5601a9f%3A0x39cfb3af1fb97cac!2sR.%20Prof.%20Carlos%20Goes%2C%2071%20-%20Centro%2C%20Campos%20dos%20Goytacazes%20-%20RJ%2C%2028035-155!5e1!3m2!1spt-BR!2sbr!4v1736682507836!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <hr/>
+            <section id="contatos" class="contatos">
+                <h2 class="contatos-titulo">
+                    Contato:
+                </h2>
+                <ul class="lista-contatos">
+                    <li class="lista-contatos-email">
+                        <a href="mailto:ericmf@adv.oabrj.org.br">
+                            <svg  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                <path id="Email" d="M155.395,182C90.58,182 37.395,235.186 37.395,300L37.395,724C37.395,788.814 90.58,842 155.395,842L868.605,842C933.42,842 986.605,788.814 986.605,724L986.605,300C986.605,235.186 933.42,182 868.605,182L155.395,182ZM155.395,242L868.605,242C872.27,242 875.831,242.372 879.295,243C849.797,309.194 802.025,367.569 742.756,409.141C675.828,456.084 593.749,482 512,482C430.251,482 348.172,456.084 281.244,409.141C221.975,367.569 174.203,309.194 144.705,243C148.169,242.372 151.73,242 155.395,242ZM99.004,286.752C133.213,354.904 184.231,414.386 246.789,458.264C324.033,512.442 417.65,542 512,542C606.35,542 699.967,512.442 777.211,458.264C839.769,414.386 890.787,354.904 924.996,286.752C925.97,291.014 926.605,295.412 926.605,300L926.605,724C926.605,756.388 900.993,782 868.605,782L155.395,782C123.007,782 97.395,756.388 97.395,724L97.395,300C97.395,295.412 98.03,291.014 99.004,286.752Z" style="fill-rule:nonzero;"/>
+                            </svg>
+                            <span class="contato_descricao">ericmf@adv.oabrj.org.br</span>
+                        </a>
+                    </li>
+                    <li class="lista-contatos-telefone">
+                        <a href="tel:5522998815479">
+                            <svg  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                <g id="Telefone" transform="matrix(0.689617,0.88836,-0.88836,0.689617,510.772,-217.641)">
+                                    <path d="M363,318.83C348.362,319.214 333.708,319.716 319.082,319C288.736,317.514 258.856,310.8 228.544,308.743C198.231,306.686 166.269,309.766 140.639,326.081C123.884,336.747 110.833,352.486 100.769,369.61C90.705,386.733 83.423,405.32 76.23,423.833C70.727,437.998 65.217,452.294 62.715,467.282C60.214,482.27 60.905,498.188 67.415,511.918C74.419,526.691 87.823,537.921 103,544C123.711,552.296 146.744,551.434 169,553C180.978,553.843 192.942,555.424 204.944,555.049C216.945,554.674 229.198,552.198 239.229,545.598C250.906,537.914 258.577,525.26 263,512C266.14,502.587 267.82,492.76 270.27,483.145C272.721,473.53 276.041,463.934 282,456C291.06,443.938 305.217,436.944 319.082,431C379.885,404.934 445.759,390.757 511.902,389.502C578.054,390.171 644.05,403.765 705.082,429.292C718.999,435.113 733.217,441.982 742.383,453.963C748.413,461.844 751.817,471.41 754.353,481.003C756.888,490.596 758.655,500.408 761.878,509.793C766.418,523.013 774.201,535.598 785.946,543.179C796.035,549.69 808.309,552.058 820.313,552.326C832.318,552.595 844.267,550.908 856.237,549.959C878.479,548.196 901.518,548.855 922.155,540.376C937.277,534.162 950.582,522.814 957.455,507.98C963.843,494.192 964.393,478.27 961.759,463.304C959.125,448.338 953.488,434.092 947.86,419.977C940.504,401.527 933.058,383.006 922.843,365.972C912.628,348.939 899.438,333.315 882.589,322.798C856.816,306.711 824.828,303.914 794.535,306.239C764.242,308.564 734.422,315.542 704.091,317.296C689.472,318.142 674.814,317.769 660.173,317.515C611.255,318.249 562.612,314.007 514.845,313.846C463.044,313.671 412.263,317.588 363,318.83Z" />
+                                </g>
+                            </svg>
+                            <span class="contato_descricao">+55 22 99881-5479</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="contatos-linha"></div>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/profile.php?id=61571819128462">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" height="3em" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 14222 14222">
+                                <defs>
+                                <style type="text/css">
+                                .fil0 {fill:#1977F3;fill-rule:nonzero}
+                                .fil1 {fill:#FEFEFE;fill-rule:nonzero}
+                                </style>
+                                </defs>
+                                <g id="Layer_x0020_1">
+                                <metadata id="CorelCorpID_0Corel-Layer"/>
+                                <path class="fil0" d="M14222 7111c0,-3927 -3184,-7111 -7111,-7111 -3927,0 -7111,3184 -7111,7111 0,3549 2600,6491 6000,7025l0 -4969 -1806 0 0 -2056 1806 0 0 -1567c0,-1782 1062,-2767 2686,-2767 778,0 1592,139 1592,139l0 1750 -897 0c-883,0 -1159,548 -1159,1111l0 1334 1972 0 -315 2056 -1657 0 0 4969c3400,-533 6000,-3475 6000,-7025z"/>
+                                <path class="fil1" d="M9879 9167l315 -2056 -1972 0 0 -1334c0,-562 275,-1111 1159,-1111l897 0 0 -1750c0,0 -814,-139 -1592,-139 -1624,0 -2686,984 -2686,2767l0 1567 -1806 0 0 2056 1806 0 0 4969c362,57 733,86 1111,86 378,0 749,-30 1111,-86l0 -4969 1657 0z"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/eric.advogado/">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" height="3em" viewBox="0 0 264.5833 264.5833" inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)" sodipodi:docname="Instagram_(2022).svg"><defs><radialGradient id="f" cx="158.429" cy="578.088" r="52.3515" xlink:href="#a" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 -4.03418 4.28018 0 -2332.2273 942.2356)" fx="158.429" fy="578.088"/><radialGradient inkscape:collect="always" xlink:href="#b" id="g" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.67441 -1.16203 1.51283 .87801 -814.3657 -47.8354)" cx="172.6149" cy="600.6924" fx="172.6149" fy="600.6924" r="65"/><radialGradient inkscape:collect="always" xlink:href="#c" id="h" cx="144.012" cy="51.3367" fx="144.012" fy="51.3367" r="67.081" gradientTransform="matrix(-2.3989 .67549 -.23008 -.81732 464.9957 -26.4035)" gradientUnits="userSpaceOnUse"/><radialGradient inkscape:collect="always" xlink:href="#d" id="e" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-3.10797 .87652 -.6315 -2.23914 1345.6503 1374.1983)" cx="199.7884" cy="628.4379" fx="199.7884" fy="628.4379" r="52.3515"/><linearGradient inkscape:collect="always" id="d"><stop offset="0" stop-color="#ff005f"/><stop offset="1" stop-color="#fc01d8"/></linearGradient><linearGradient id="c"><stop offset="0" stop-color="#780cff"/><stop stop-color="#820bff" offset="1" stop-opacity="0"/></linearGradient><linearGradient inkscape:collect="always" id="b"><stop offset="0" stop-color="#fc0"/><stop offset="1" stop-color="#fc0" stop-opacity="0"/></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fc0"/><stop offset=".1242" stop-color="#fc0"/><stop offset=".5672" stop-color="#fe4a05"/><stop offset=".6942" stop-color="#ff0f3f"/><stop offset="1" stop-color="#fe0657" stop-opacity="0"/></linearGradient></defs><sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:zoom=".515" inkscape:cx="500" inkscape:cy="500" inkscape:document-units="mm" inkscape:current-layer="layer1" inkscape:document-rotation="0" showgrid="false" inkscape:window-width="1366" inkscape:window-height="705" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1"/><g inkscape:label="Layer 1" inkscape:groupmode="layer"><path d="M204.1503 18.1429c-55.2305 0-71.3834.057-74.5232.3175-11.3342.9424-18.387 2.7275-26.0708 6.554-5.9214 2.9413-10.5915 6.3506-15.2005 11.1298-8.3938 8.7157-13.481 19.4383-15.3226 32.1842-.8953 6.1877-1.1558 7.4496-1.2087 39.0558-.0203 10.5354 0 24.4007 0 42.9984 0 55.2008.061 71.3418.3256 74.4764.9157 11.032 2.6453 17.9728 6.3081 25.565 7 14.5329 20.369 25.4428 36.119 29.5137 5.4535 1.4044 11.4767 2.1779 19.2092 2.5442 3.2762.1425 36.6684.2443 70.081.2443 33.4127 0 66.8253-.0407 70.02-.2035 8.9535-.4214 14.1526-1.1195 19.9011-2.6054 15.8517-4.0912 28.9767-14.8383 36.119-29.5748 3.5916-7.409 5.4128-14.6144 6.237-25.0704.179-2.2796.2543-38.6263.2543-74.924 0-36.304-.0814-72.5835-.2605-74.8632-.8343-10.6249-2.6555-17.7692-6.363-25.3207-3.0421-6.1816-6.42-10.798-11.324-15.518-8.752-8.3616-19.4555-13.4502-32.2101-15.2902-6.18-.8936-7.411-1.1582-39.033-1.2131z" inkscape:connector-curvature="0" fill="url(#e)" transform="translate(-71.8155 -18.1429)"/><path d="M204.1503 18.1429c-55.2305 0-71.3834.057-74.5232.3175-11.3342.9424-18.387 2.7275-26.0708 6.554-5.9214 2.9413-10.5915 6.3506-15.2005 11.1298-8.3938 8.7157-13.481 19.4383-15.3226 32.1842-.8953 6.1877-1.1558 7.4496-1.2087 39.0558-.0203 10.5354 0 24.4007 0 42.9984 0 55.2008.061 71.3418.3256 74.4764.9157 11.032 2.6453 17.9728 6.3081 25.565 7 14.5329 20.369 25.4428 36.119 29.5137 5.4535 1.4044 11.4767 2.1779 19.2092 2.5442 3.2762.1425 36.6684.2443 70.081.2443 33.4127 0 66.8253-.0407 70.02-.2035 8.9535-.4214 14.1526-1.1195 19.9011-2.6054 15.8517-4.0912 28.9767-14.8383 36.119-29.5748 3.5916-7.409 5.4128-14.6144 6.237-25.0704.179-2.2796.2543-38.6263.2543-74.924 0-36.304-.0814-72.5835-.2605-74.8632-.8343-10.6249-2.6555-17.7692-6.363-25.3207-3.0421-6.1816-6.42-10.798-11.324-15.518-8.752-8.3616-19.4555-13.4502-32.2101-15.2902-6.18-.8936-7.411-1.1582-39.033-1.2131z" inkscape:connector-curvature="0" fill="url(#f)" transform="translate(-71.8155 -18.1429)"/><path d="M204.1503 18.1429c-55.2305 0-71.3834.057-74.5232.3175-11.3342.9424-18.387 2.7275-26.0708 6.554-5.9214 2.9413-10.5915 6.3506-15.2005 11.1298-8.3938 8.7157-13.481 19.4383-15.3226 32.1842-.8953 6.1877-1.1558 7.4496-1.2087 39.0558-.0203 10.5354 0 24.4007 0 42.9984 0 55.2008.061 71.3418.3256 74.4764.9157 11.032 2.6453 17.9728 6.3081 25.565 7 14.5329 20.369 25.4428 36.119 29.5137 5.4535 1.4044 11.4767 2.1779 19.2092 2.5442 3.2762.1425 36.6684.2443 70.081.2443 33.4127 0 66.8253-.0407 70.02-.2035 8.9535-.4214 14.1526-1.1195 19.9011-2.6054 15.8517-4.0912 28.9767-14.8383 36.119-29.5748 3.5916-7.409 5.4128-14.6144 6.237-25.0704.179-2.2796.2543-38.6263.2543-74.924 0-36.304-.0814-72.5835-.2605-74.8632-.8343-10.6249-2.6555-17.7692-6.363-25.3207-3.0421-6.1816-6.42-10.798-11.324-15.518-8.752-8.3616-19.4555-13.4502-32.2101-15.2902-6.18-.8936-7.411-1.1582-39.033-1.2131z" inkscape:connector-curvature="0" fill="url(#g)" transform="translate(-71.8155 -18.1429)"/><path d="M204.1503 18.1429c-55.2305 0-71.3834.057-74.5232.3175-11.3342.9424-18.387 2.7275-26.0708 6.554-5.9214 2.9413-10.5915 6.3506-15.2005 11.1298-8.3938 8.7157-13.481 19.4383-15.3226 32.1842-.8953 6.1877-1.1558 7.4496-1.2087 39.0558-.0203 10.5354 0 24.4007 0 42.9984 0 55.2008.061 71.3418.3256 74.4764.9157 11.032 2.6453 17.9728 6.3081 25.565 7 14.5329 20.369 25.4428 36.119 29.5137 5.4535 1.4044 11.4767 2.1779 19.2092 2.5442 3.2762.1425 36.6684.2443 70.081.2443 33.4127 0 66.8253-.0407 70.02-.2035 8.9535-.4214 14.1526-1.1195 19.9011-2.6054 15.8517-4.0912 28.9767-14.8383 36.119-29.5748 3.5916-7.409 5.4128-14.6144 6.237-25.0704.179-2.2796.2543-38.6263.2543-74.924 0-36.304-.0814-72.5835-.2605-74.8632-.8343-10.6249-2.6555-17.7692-6.363-25.3207-3.0421-6.1816-6.42-10.798-11.324-15.518-8.752-8.3616-19.4555-13.4502-32.2101-15.2902-6.18-.8936-7.411-1.1582-39.033-1.2131z" inkscape:connector-curvature="0" fill="url(#h)" transform="translate(-71.8155 -18.1429)"/><path d="M132.3452 33.973c-26.7167 0-30.0696.1167-40.5629.5939-10.4727.4792-17.6212 2.136-23.8762 4.567-6.4701 2.5107-11.9586 5.8693-17.4265 11.3352-5.472 5.464-8.8332 10.9483-11.354 17.4116-2.4389 6.2524-4.099 13.3976-4.5703 23.8585-.4693 10.4854-.5923 13.8379-.5923 40.5348 0 26.697.1189 30.0371.5943 40.5225.4817 10.465 2.1397 17.6082 4.5703 23.8585 2.5147 6.4654 5.8758 11.9497 11.3458 17.4136 5.466 5.468 10.9544 8.8349 17.4204 11.3456 6.259 2.4309 13.4097 4.0877 23.8803 4.567 10.4933.477 13.8441.5938 40.5588.5938 26.7188 0 30.0615-.1167 40.5547-.5939 10.4728-.4792 17.6295-2.136 23.8885-4.567 6.4681-2.5106 11.9484-5.8775 17.4143-11.3455 5.472-5.4639 8.8332-10.9482 11.354-17.4115 2.4183-6.2524 4.0784-13.3976 4.5703-23.8585.4713-10.4854.5943-13.8277.5943-40.5246 0-26.697-.123-30.0473-.5943-40.5328-.4919-10.465-2.152-17.6081-4.5703-23.8584-2.5208-6.4654-5.882-11.9498-11.354-17.4137-5.4721-5.468-10.9442-8.8266-17.4204-11.3353-6.2714-2.4309-13.424-4.0877-23.8967-4.5669-10.4933-.4772-13.8339-.5939-40.5588-.5939zm-8.825 17.7147c2.6193-.0041 5.5418 0 8.825 0 26.2659 0 29.379.0942 39.7513.5652 9.5915.4383 14.7971 2.0397 18.2648 3.3852 4.5908 1.7817 7.8638 3.9116 11.3048 7.3521 3.4431 3.4406 5.5745 6.7173 7.3617 11.3046 1.3465 3.461 2.9512 8.6628 3.3877 18.2472.4714 10.3625.5739 13.4754.5739 39.7095 0 26.234-.1025 29.347-.5739 39.7095-.4386 9.5843-2.0412 14.7861-3.3877 18.2471-1.783 4.5874-3.9186 7.8539-7.3617 11.2923-3.443 3.4406-6.712 5.5704-11.3048 7.3521-3.4636 1.3517-8.6733 2.949-18.2648 3.3873-10.3702.471-13.4854.5734-39.7513.5734-26.2679 0-29.381-.1024-39.7513-.5734-9.5914-.4423-14.797-2.0438-18.2668-3.3893-4.5908-1.7817-7.87-3.9116-11.313-7.3521-3.4431-3.4405-5.5745-6.709-7.3617-11.2985-1.3465-3.461-2.9512-8.6628-3.3877-18.2471-.4714-10.3626-.5657-13.4754-.5657-39.7259 0-26.2504.0943-29.347.5657-39.7095.4386-9.5844 2.0412-14.7861 3.3877-18.2512 1.783-4.5874 3.9186-7.8641 7.3617-11.3046 3.443-3.4406 6.7222-5.5704 11.313-7.3562 3.4677-1.3517 8.6754-2.949 18.2668-3.3894 9.075-.4096 12.5919-.5324 30.9264-.553zm61.3363 16.322c-6.5173 0-11.805 5.2776-11.805 11.792 0 6.5125 5.2877 11.7962 11.805 11.7962 6.5172 0 11.8049-5.2837 11.8049-11.7962 0-6.5124-5.2877-11.796-11.805-11.796zm-52.5113 13.7826c-27.8993 0-50.5191 22.6031-50.5191 50.4817 0 27.8786 22.6198 50.4714 50.5191 50.4714s50.511-22.5928 50.511-50.4714c0-27.8786-22.6137-50.4817-50.513-50.4817zm0 17.7147c18.109 0 32.7914 14.6694 32.7914 32.767 0 18.0956-14.6824 32.767-32.7914 32.767-18.111 0-32.7913-14.6714-32.7913-32.767 0-18.0976 14.6803-32.767 32.7913-32.767z" inkscape:connector-curvature="0" fill="#fff"/></g></svg>
+                        </a>
+                        <a href="https://www.threads.net/@eric.advogado">
+                            <svg height="3em" xmlns="http://www.w3.org/2000/svg" aria-label="Threads" viewBox="0 0 192 192"><path class="x19hqcy" d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/adv-eric">
+                            <svg height="3em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" focusable="false">
+                                <path fill="#0a66c2"d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Eric-MF">
+                            <svg height="3em" aria-hidden="true" viewBox="0 0 24 24" version="1.1" data-view-component="true" class="octicon octicon-mark-github">
+                                <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+                            </svg>
+                        </a>
+                        <a id="whatsapp-contato" href="https://api.whatsapp.com/send?phone=5522998815479&text=Ol%C3%A1,%20Eric!%20Saberia%20me%20esclarecer%20uma%20quest%C3%A3o?">
+                            <svg alt="Logo WhatsApp" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 31 31" fill="none"><path d="M30.3139 14.8011C30.1739 10.9697 28.5594 7.34056 25.8073 4.67136C23.0552 2.00216 19.3784 0.499287 15.5446 0.476567H15.4722C12.8904 0.474649 10.3527 1.14494 8.10857 2.42148C5.86449 3.69802 3.99142 5.53682 2.67367 7.75695C1.35592 9.97709 0.6389 12.5021 0.593155 15.0834C0.547411 17.6648 1.17452 20.2135 2.41278 22.479L1.09794 30.3469C1.0958 30.363 1.09712 30.3794 1.10182 30.395C1.10651 30.4106 1.11448 30.425 1.12518 30.4373C1.13588 30.4496 1.14907 30.4594 1.16387 30.4662C1.17867 30.473 1.19475 30.4765 1.21103 30.4766H1.23365L9.01561 28.7456C11.0263 29.7109 13.2282 30.2118 15.4586 30.2112C15.6004 30.2112 15.7421 30.2112 15.8838 30.2112C17.8458 30.1552 19.7773 29.7112 21.5667 28.9048C23.3562 28.0984 24.9682 26.9456 26.3098 25.5129C27.6514 24.0802 28.696 22.396 29.3832 20.5574C30.0704 18.7189 30.3867 16.7625 30.3139 14.8011V14.8011ZM15.8099 27.6252C15.6923 27.6252 15.5747 27.6252 15.4586 27.6252C13.4874 27.6277 11.5444 27.156 9.79366 26.2501L9.39559 26.042L4.11815 27.289L5.09221 21.9497L4.86604 21.5667C3.78579 19.725 3.20393 17.6336 3.17778 15.4985C3.15163 13.3635 3.68208 11.2584 4.71689 9.39075C5.75171 7.52306 7.25518 5.95715 9.07924 4.84724C10.9033 3.73732 12.985 3.1217 15.1194 3.06101C15.238 3.06101 15.3571 3.06101 15.4767 3.06101C18.6992 3.07056 21.7889 4.34564 24.0802 6.61154C26.3715 8.87743 27.681 11.9528 27.7265 15.1749C27.7719 18.3971 26.5498 21.5081 24.3234 23.8378C22.0969 26.1675 19.0444 27.5293 15.8235 27.6298L15.8099 27.6252Z" fill="#25D366"/><path d="M10.2894 8.16663C10.1057 8.17022 9.92456 8.21063 9.75673 8.28548C9.5889 8.36033 9.43779 8.4681 9.31236 8.6024C8.95801 8.96579 7.96736 9.84034 7.91006 11.6769C7.85277 13.5134 9.13594 15.3304 9.31537 15.5852C9.49481 15.84 11.7686 19.8072 15.5141 21.416C17.7156 22.3645 18.6806 22.5273 19.3063 22.5273C19.5642 22.5273 19.7587 22.5002 19.9622 22.4881C20.6483 22.4459 22.1969 21.6528 22.5346 20.7903C22.8724 19.9278 22.895 19.1739 22.806 19.0231C22.7171 18.8723 22.4728 18.7637 22.1049 18.5707C21.737 18.3777 19.9321 17.4127 19.5928 17.277C19.467 17.2184 19.3316 17.1832 19.1932 17.173C19.1031 17.1777 19.0155 17.2043 18.938 17.2506C18.8605 17.2968 18.7954 17.3613 18.7484 17.4383C18.4469 17.8138 17.7548 18.6295 17.5225 18.8648C17.4718 18.9232 17.4093 18.9703 17.3392 19.0031C17.2691 19.0358 17.1928 19.0534 17.1154 19.0548C16.9728 19.0485 16.8333 19.0109 16.7068 18.9447C15.6135 18.4804 14.6167 17.8155 13.768 16.9845C12.975 16.2029 12.3022 15.3081 11.7716 14.3292C11.5666 13.9492 11.7716 13.7532 11.9586 13.5753C12.1456 13.3973 12.3461 13.1516 12.5391 12.9389C12.6975 12.7573 12.8295 12.5543 12.9312 12.3358C12.9838 12.2344 13.0104 12.1215 13.0085 12.0073C13.0067 11.893 12.9765 11.7811 12.9206 11.6814C12.8317 11.4914 12.1667 9.62321 11.8546 8.87381C11.6013 8.23298 11.2997 8.21187 11.0358 8.19227C10.8187 8.17719 10.5699 8.16965 10.3211 8.16211H10.2894" fill="#25D366"/></svg>
+                        </a>
+                    </div>
+                    
+                    
+                </section>
+            <section id="endereco" class="endereco">
+                <h2 class="endereco_titulo">
+                    Endereço:
+                </h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.2960492782904!2d-41.33101652538107!3d-21.7606137979147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdd449b5601a9f%3A0x39cfb3af1fb97cac!2sR.%20Prof.%20Carlos%20Goes%2C%2071%20-%20Centro%2C%20Campos%20dos%20Goytacazes%20-%20RJ%2C%2028035-155!5e1!3m2!1spt-BR!2sbr!4v1736682507836!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+    </main>
     <footer class="rodape">
+        <hr/>
         <h2 class="rodape_nome">Eric Fernandes <span>OAB/RJ 256 078</span></h2>
         <p class="rodape_direitos">Todos os direitos reservados.</p>
-
     </footer>
     <script src="main.js"></script>
 </body>

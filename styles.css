@@ -7,11 +7,19 @@
 @import url("styles/endereco.css");
 @import url("styles/rodape.css");
 
-
+/* Melhora o comportamento das bordas */
+*, *::after, *::before {box-sizing: inherit;}
+html{box-sizing: border-box;}
 body {
+    animation: abrirsite 3s forwards;
     background-color: var(--preto);
     color:var(--branco);
     font-family: "Inter", serif;
+
+}
+@keyframes abrirsite {
+    from {opacity: 0;}
+    to {opacity: 100%;}
 }
 .container-1{
 margin: 0 1rem 0 1rem;
@@ -27,4 +35,32 @@ svg:hover {
 #logo{
     height: 40px;
 }
-
+/* Padrão de Links */
+a, a:visited{
+    &{
+        color: var(--branco);
+    }
+    &{  
+        text-decoration: none;
+        color: var(--branco);
+        transition: color 0.5s ease-in-out;
+    }
+    &:hover{
+        color: var(--cor-primaria-claro);
+        transition: color 0.5s ease-in-out;
+    }
+}
+#direita{
+    width: 100vw;
+}  
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+}
+@media screen and (min-aspect-ratio: 2/3) {
+    #direita{
+        width: 50vw;
+        flex-grow: 3;
+    }  
+}

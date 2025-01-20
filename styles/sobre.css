@@ -27,3 +27,13 @@
     color: var(--cor-secundaria-clarissima);
     font-weight: 600;
 }
+@media screen and (min-aspect-ratio: 2/3) {
+    .sobre{
+        padding: 2em 0;
+        margin-top: 2em;
+        transition: all 1s;
+    }
+    .sobre_subsecao{
+        border-radius: 1em 0 0 1em;
+    }  
+}
