@@ -1,0 +1,64 @@
+main#blog,main#artigo{
+    &{
+    flex-flow: column;
+    flex-wrap: nowrap;
+    }
+    h1{
+        margin: 3em 1em 1em 1em;
+        font-size: 1.5em;
+        font-weight: 600;
+        display: block;
+    }
+    h2{
+        font-size: 1.2em;
+        margin: 2.5em 1em 1em 1em;
+        display: block;
+    }
+    p{
+        &{
+            margin: .3em .5em;
+            text-align: justify;
+            text-indent: 1em;
+            line-height: 1.3em;
+        }
+    }
+    
+}
+main#artigo {
+    p{
+        strong{
+            font-weight: 700;
+        }
+        i{
+            font-style: italic;
+        }
+        mark{
+            background-image: radial-gradient(var(--cor-terciaria-escurissima),var(--cor-secundaria-escuro));
+            color: var(--cor-secundaria-clarissima);
+            padding: 0 .2em;
+            border-radius: 2em;
+            border: solid 1px var(--cor-secundaria-clarissima);
+        }
+        
+    }
+    div.fonte:has(a){
+        padding: 0 0 0 2em;
+        margin: .1em 1em .3em 1em;
+        border-left: .05em solid;
+        color: transparent;
+    }
+    /* Leis */
+    div.fonte:has(a[href^="https://www.planalto.gov.br/"]){
+        &{border-image: linear-gradient(15deg,var(--cor-primaria-clarissima),var(--cor-secundaria));border-image-slice: 1;}
+        p:first-child a::before{content: url('../../img/Brasão%20de%20Armas%20Brasil.svg');max-width: 1em;}
+        a{background-image: linear-gradient(45deg,var(--cor-secundaria-claro2),var(--cor-secundaria-clarissima));color: transparent;background-clip: text;}
+    }
+    /* STJ */
+    div:has(>a[href^="https://processo.stj.jus.br/"]){
+        &{border-image: linear-gradient( #004c23, #003c5f);border-image-slice: 1;}
+        a::before{content: url('../../img/STJ.svg');max-width: 1em;}
+        a{background-image: linear-gradient( #004c23, #003c5f);background-clip: text;}
+    }
+    
+}
+
