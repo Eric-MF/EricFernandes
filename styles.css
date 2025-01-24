@@ -6,6 +6,7 @@
 @import url("styles/contatos.css");
 @import url("styles/endereco.css");
 @import url("styles/rodape.css");
+@import url("styles/blog.css");
 
 /* Melhora o comportamento das bordas */
 *, *::after, *::before {box-sizing: inherit;}
