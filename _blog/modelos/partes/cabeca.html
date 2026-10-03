@@ -1,0 +1,29 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://eric.adv.br/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="https://eric.adv.br/img/favicon.svg">
+    <link rel="shortcut icon" href="https://eric.adv.br/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eric.adv.br/img/apple-touch-icon.png">
+    <script>
+        // O blog acompanha a aparência da última versão do site visitada (ou ?versao=48652 no endereço)
+        (function () {
+            var temas = {"original": "original", "93115": "classica", "75946": "moderna", "48652": "acolhedora", "59899": "futurista"};
+            var versao = new URLSearchParams(location.search).get("versao");
+            try {
+                if (temas[versao]) localStorage.setItem("versao-site", versao);
+                else versao = localStorage.getItem("versao-site");
+            } catch (erro) {}
+            if (!temas[versao]) return;
+            document.documentElement.dataset.tema = temas[versao];
+            // "Voltar ao site" leva para a mesma versão
+            document.addEventListener("DOMContentLoaded", function () {
+                if (versao === "original") return;
+                document.querySelectorAll("a[data-site]").forEach(function (link) {
+                    link.href = "../../" + versao + "/" + (link.dataset.site || "");
+                });
+            });
+        })();
+    </script>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="../../privacidade/consentimento.css">
+    <script src="../../privacidade/consentimento.js" defer></script>

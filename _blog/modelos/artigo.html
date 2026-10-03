@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+{{marca}}
+<head>
+{{cabeca}}
+    <title>{{titulo}} | Eric Fernandes, advogado</title>
+    <meta name="description" content="{{descricao}}">
+    <link rel="canonical" href="{{endereco}}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{titulo}}">
+    <meta property="og:description" content="{{descricao}}">
+    <meta property="og:url" content="{{endereco}}">
+    <meta property="og:locale" content="pt_BR">
+    <script type="application/ld+json">{{dados_estruturados}}</script>
+</head>
+<body>
+{{topo}}
+    <main id="conteudo" class="largura">
+        <article class="artigo">
+            <header class="artigo-cabecalho">
+                <p class="voltar"><a href="./">← Todos os artigos</a></p>
+                <h1>{{titulo}}</h1>
+                <p class="artigo-resumo">{{descricao}}</p>
+                <p class="detalhes">Por Eric Fernandes · Publicado em <time datetime="{{data_iso}}">{{data_extenso}}</time>{{atualizado}} · {{leitura}}</p>
+            </header>
+{{sumario}}
+            <div class="artigo-texto">
+{{conteudo}}
+            </div>
+            <aside class="autor" aria-label="Sobre o autor">
+                <p class="autor-nome">Eric Fernandes</p>
+                <p>Advogado com foco em Direito Previdenciário, inscrito na OAB/RJ sob o nº 256 078.</p>
+                <p>Este artigo é informativo. Para uma análise do seu caso, veja os <a href="../../#contatos" data-site="#contato">canais de atendimento</a>.</p>
+            </aside>
+        </article>
+    </main>
+{{rodape}}
+</body>
+</html>

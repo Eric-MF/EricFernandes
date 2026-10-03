@@ -1,0 +1,128 @@
+/* Aviso de cookies e mapa bloqueado: cores próprias, para funcionar igual em todas as versões do site */
+.cookies{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    max-width: 44rem;
+    max-height: 85vh;
+    margin: 0 auto;
+    padding: 1.2rem 1.2rem 1rem;
+    overflow-y: auto;
+    border: 2px solid #1D2433;
+    border-bottom: 0;
+    border-radius: 1rem 1rem 0 0;
+    background: #fff;
+    box-shadow: 0 -.4rem 2rem rgba(0, 0, 0, .35);
+    color: #1D2433;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+    text-align: left;
+}
+.cookies[hidden]{ display: none; }
+.cookies .cookies-titulo{
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #1D2433;
+    font-family: inherit;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.cookies p{
+    margin: 0 0 1em;
+    padding: 0;
+    font-size: 1em;
+    text-align: left;
+    text-indent: 0;
+}
+.cookies a:is(:link, :visited){
+    color: #0B4F8A;
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+.cookies-opcoes{
+    margin: 0 0 1em;
+    padding: 0;
+    border: 0;
+}
+.cookies-opcoes[hidden]{ display: none; }
+.cookies-opcoes legend{
+    margin-bottom: .4em;
+    padding: 0;
+    font-weight: 700;
+}
+.cookies-opcoes label{
+    display: flex;
+    align-items: center;
+    gap: .6em;
+    min-height: 48px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cookies-opcoes input{
+    width: 1.4em;
+    height: 1.4em;
+    margin: 0;
+    accent-color: #1D2433;
+}
+.cookies-botoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6em;
+}
+.cookies-botoes button, .mapa-bloqueado button{
+    flex: 1 1 7em;
+    min-height: 48px;
+    padding: .5em 1em;
+    border: 2px solid #1D2433;
+    border-radius: .5em;
+    background: #1D2433;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+.cookies-botoes .cookies-escolher{
+    background: #fff;
+    color: #1D2433;
+}
+.cookies button:hover, .mapa-bloqueado button:hover{ text-decoration: underline; }
+.cookies :focus-visible, .mapa-bloqueado :focus-visible, [data-preferencias-cookies]:focus-visible{
+    outline: 3px solid #0B4F8A;
+    outline-offset: 3px;
+}
+
+/* Mapa do Google enquanto não há permissão */
+.mapa-bloqueado{
+    max-width: 36rem;
+    margin: 1rem auto;
+    padding: 1.2rem;
+    border: 2px dashed #8A8F99;
+    border-radius: .8rem;
+    background: #F4F4F2;
+    color: #1D2433;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+    text-align: left;
+}
+.mapa-bloqueado p{
+    margin: 0 0 1em;
+    font-size: 1em;
+}
+.mapa-bloqueado button{ width: 100%; }
+
+/* Link do rodapé para rever a escolha */
+[data-preferencias-cookies]{
+    min-height: 48px;
+    padding: .5em;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-decoration: underline;
+    text-underline-offset: .2em;
+    cursor: pointer;
+}

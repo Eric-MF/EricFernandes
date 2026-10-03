@@ -2,7 +2,7 @@ footer, footer *{
     text-align: center;
     margin: 0.5em;
 }
-.rodape-nome{
+.rodape_nome{
     font-weight: 700;
     color:var(--cor-primaria-clarissima)
 }
