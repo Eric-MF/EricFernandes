@@ -1,13 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-T9L6ZZSM');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contato de advogado previdenciarista. Além de advogado para aposentadoria, atua em vários ramos da advocacia. Quanto custa o seu futuro?">
@@ -15,6 +8,9 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="../../reset.css">
     <link rel="stylesheet" type="text/css" href="../../styles.css">
+    <link rel="stylesheet" type="text/css" href="privacidade/consentimento.css">
+    <script src="privacidade/consentimento.js" defer></script>
+    <script>try { localStorage.setItem("versao-site", "original"); } catch (erro) {}</script>
     <!-- favicon -->
         <link rel="icon" type="image/png" href="https://eric.adv.br/img/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="https://eric.adv.br/img/favicon.svg" />
@@ -28,13 +24,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9L6ZZSM"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <header class="cabeçalho">
         <div class="container-1">
-            <a href="previdenciario/blog">
+            <a href="./" aria-label="Início">
                 <svg alt="Logo Eric Advocacia" fill="none" width="40px" height="40px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                     <path id="logo"  d="M511.68,67.285C489.111,67.359 466.548,69.133 444.246,72.588C431.753,74.524 419.342,76.986 407.056,79.966C398.111,82.135 391.223,91.651 391.391,100.855C393.499,216.967 373.306,333.456 332.166,442.06C290.789,551.288 228.255,652.45 149.109,738.344C142.601,745.406 141.364,757.602 146.846,765.486C178.905,811.589 219.752,851.572 266.575,882.574C338.749,930.362 425.119,956.412 511.68,956.5M511.68,67.285C534.249,67.359 556.812,69.133 579.115,72.588C591.607,74.524 604.018,76.986 616.304,79.966C625.249,82.135 632.137,91.651 631.97,100.855C629.861,216.967 650.055,333.456 691.195,442.06C732.571,551.288 795.105,652.45 874.252,738.344C880.759,745.406 881.996,757.602 876.514,765.486C844.456,811.589 803.609,851.572 756.785,882.574C684.611,930.362 598.241,956.412 511.68,956.5"/>
                 </svg>
@@ -80,7 +72,7 @@
                 <div class="sobre_subsecao">
                     <h2 class="sobre_titulo">Quem é Eric?</h2>
                     <p class="sobre_texto">
-                        Tenho experiência com <span class="sobre_texto_destaque_1" title="Direito para aposentaria">Direito Previdenciário</span>. Busco integrar o Direito à Tecnologia, trazendo a <span class="sobre_texto_destaque_2">prática jurídica conciliada à inovação</span>.
+                        Tenho experiência com <span class="sobre_texto_destaque_1" title="Direito para aposentadoria">Direito Previdenciário</span>. Busco integrar o Direito à Tecnologia, trazendo a <span class="sobre_texto_destaque_2">prática jurídica conciliada à inovação</span>.
                     </p>
                 </div>
             </section>
@@ -94,9 +86,9 @@
                         <h3 class="duvidas_perguntas"><div class="seta"></div> Qual é a idade mínima para se aposentar?</h3>
                     </label>
                     <div class="espaço-resposta">
-                        <p class="duvidas_respostas">Atualmente, no Regime Geral, as <span class="primario">mulheres</span> podem se aposentar com no mínimo <span class="primario">62 anos e 15 anos de contribuição</span>, já os <span class="terciario">homens</span> no mínimo <span class="terciario">65 anos e 20 anos de contribuição</span>.</p>
+                        <p class="duvidas_respostas">Atualmente, no Regime Geral, as <span class="primario">mulheres</span> podem se aposentar com no mínimo <span class="primario">62 anos e 15 anos de contribuição</span>, já os <span class="terciario">homens</span> no mínimo <span class="terciario">65 anos e 15 anos de contribuição</span>. Homens que começaram a contribuir depois de 13/11/2019 precisam de 20 anos de contribuição.</p>
                         <p class="duvidas_respostas">Importante ressaltar que existem regras de transição que podem alterar os valores.</p>
-                        <p class="duvidas_fontes">Fonte: <a href="https://www.gov.br/inss/pt-br/noticias/ajustes-na-idade-minima-e-nas-regras-de-transicao-para-pedir-aposentadoria-ja-estao-em-vigor-confira#:~:text=Conforme%20a%20regra%20atual%20para,idade%20e%2020%20de%20contribui%C3%A7%C3%A3o">https://www.gov.br</a></p>
+                        <p class="duvidas_fontes">Fontes: <a href="https://www.gov.br/inss/pt-br/assuntos/noticias/aposentadoria-por-idade-tudo-o-que-voce-precisa-saber-sobre-um-dos-beneficios-mais-populares">https://www.gov.br</a> e <a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc103.htm">EC 103/2019</a></p>
                     </div>
                 </div>
                 <div class="perguntas_respostas">
@@ -107,7 +99,7 @@
                     <div class="espaço-resposta">
                         <p class="duvidas_respostas">Para se aposentar, as pessoas que atendam aos requisitos mínimos, tem que realizar duas etapas:</p>
                         <p class="duvidas_respostas">1- Pedir benefício através do <a class="primario" href="http://gov.br/meuinss">site</a> ou aplicativo <a class="secundario" href="https://play.google.com/store/apps/details?id=br.gov.dataprev.meuinss&hl=pt_BR">Android</a> ou <a class="terciario" href="https://apps.apple.com/br/app/meu-inss-central-de-servi%C3%A7os/id1243048358">IOS</a> do Meu INSS, confirmando o serviço, requerente, unidade e as relações;</p>
-                        <p class="duvidas_respostas">2- Consultar, após a etapa anterior, a resposta do pedido de aposentadoria que demora apróximadamente 45 dias, sendo informada pelos mesmos meios de pedido.</p>
+                        <p class="duvidas_respostas">2- Consultar, após a etapa anterior, a resposta do pedido de aposentadoria que demora aproximadamente 45 dias, sendo informada pelos mesmos meios de pedido.</p>
                         <p class="duvidas_fontes">Fonte: <a href="https://www.gov.br/pt-br/servicos/solicitar-aposentadoria-por-idade-trabalhador-urbano#:~:text=Servi%C3%A7o%20para%20pedir%20benef%C3%ADcio%20de,anos%20de%20idade%2C%20se%20mulher">https://www.gov.br</a></p>
                     </div>
                 </div>
@@ -123,7 +115,7 @@
                         <p class="duvidas_respostas_itens">1.2 - Aposentadoria idade <span class="secundario">rural</span></p>
                         <p class="duvidas_respostas_itens">1.3 - Aposentadoria idade <span class="terciario">híbrida</span></p>
                         <p class="duvidas_respostas_itens">2 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20IV-,Da%20Aposentadoria%20Especial,-Art.%C2%A057.%C2%A0A">Aposentadoria especial</a></p>
-                        <p class="duvidas_respostas_itens">3 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20I-,Da%20Aposentadoria%20por%20Invalidez,-Art.%2042.%C2%A0A">Aposentadoria por invalidez</a></p>
+                        <p class="duvidas_respostas_itens">3 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20I-,Da%20Aposentadoria%20por%20Invalidez,-Art.%2042.%C2%A0A">Aposentadoria por incapacidade permanente (antiga aposentadoria por invalidez)</a></p>
                         <p class="duvidas_respostas_itens">4 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Subse%C3%A7%C3%A3o%20III-,Da%20Aposentadoria%20por%20Tempo%20de%20Servi%C3%A7o,-Art.%2052.%C2%A0A">Aposentadoria por tempo de contribuição</a></p>
                         <p class="duvidas_respostas_itens">5 - <a href="https://www.planalto.gov.br/ccivil_03/leis/L8213compilado.htm#:~:text=Art.%C2%A056.%C2%A0O,III%20deste%20Cap%C3%ADtulo.">Aposentadoria do professor</a></p>
                         <p class="duvidas_respostas_itens">6 - <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp142.htm#:~:text=no%20tocante%20%C3%A0-,aposentadoria%20da%20pessoa%20com%20defici%C3%AAncia,-segurada%20do%20Regime">Aposentadoria da pessoa com deficiência</a></p>
@@ -132,10 +124,10 @@
                 <div class="perguntas_respostas">
                     <input id="p4" type="checkbox">
                     <label for="p4">
-                        <h3 class="duvidas_perguntas"><div class="seta"></div> Porque contratar um advogado para aposentadoria?</h3>
+                        <h3 class="duvidas_perguntas"><div class="seta"></div> Por que contratar um advogado para aposentadoria?</h3>
                     </label>
                     <div class="espaço-resposta">
-                        <p class="duvidas_respostas">Apesar de não ser obrigatório na fase administrativa, contratar um advogado pode <span class="secundario">auxilia-lo a receber o melhor benefício possível</span>, pois, devido a fatores como as regras de transição e divergência de cálculos, um profissional irá garantir que saiba os seus direitos.</p>
+                        <p class="duvidas_respostas">Apesar de não ser obrigatório na fase administrativa, contratar um advogado pode <span class="secundario">auxiliá-lo a receber o melhor benefício possível</span>, pois, devido a fatores como as regras de transição e divergência de cálculos, um profissional irá garantir que saiba os seus direitos.</p>
                     </div>
                 </div>
             </section>
@@ -208,13 +200,14 @@
                 <h2 class="endereco_titulo">
                     Endereço:
                 </h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.2960492782904!2d-41.33101652538107!3d-21.7606137979147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdd449b5601a9f%3A0x39cfb3af1fb97cac!2sR.%20Prof.%20Carlos%20Goes%2C%2071%20-%20Centro%2C%20Campos%20dos%20Goytacazes%20-%20RJ%2C%2028035-155!5e1!3m2!1spt-BR!2sbr!4v1736682507836!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe title="Mapa do escritório" hidden data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.2960492782904!2d-41.33101652538107!3d-21.7606137979147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdd449b5601a9f%3A0x39cfb3af1fb97cac!2sR.%20Prof.%20Carlos%20Goes%2C%2071%20-%20Centro%2C%20Campos%20dos%20Goytacazes%20-%20RJ%2C%2028035-155!5e1!3m2!1spt-BR!2sbr!4v1736682507836!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
     </main>
     <footer class="rodape">
         <hr/>
         <h2 class="rodape_nome">Eric Fernandes <span>OAB/RJ 256 078</span></h2>
         <p class="rodape_direitos">Todos os direitos reservados.</p>
+        <p class="rodape_privacidade"><a href="privacidade/">Política de privacidade</a> · <button type="button" data-preferencias-cookies>Preferências de cookies</button></p>
     </footer>
     <script src="main.js"></script>
 </body>
