@@ -1,11 +1,14 @@
-@import url("styles/cores.css");
-@import url("styles/header.css");
-@import url("styles/banner.css");
-@import url("styles/sobre.css");
-@import url("styles/duvidas.css");
-@import url("styles/contatos.css");
-@import url("styles/endereco.css");
-@import url("styles/rodape.css");
+@import url("styles/fontes.css?v=5");
+@import url("styles/cores.css?v=5");
+@import url("styles/header.css?v=5");
+@import url("styles/banner.css?v=5");
+@import url("styles/sobre.css?v=5");
+@import url("styles/duvidas.css?v=5");
+@import url("styles/contatos.css?v=5");
+@import url("styles/endereco.css?v=5");
+@import url("styles/rodape.css?v=5");
+@import url("styles/leitura.css?v=5");
+@import url("styles/artigos.css?v=5");
 
 /* Melhora o comportamento das bordas */
 *, *::after, *::before {box-sizing: inherit;}

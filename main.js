@@ -1,15 +1,28 @@
 const menuContainer = document.querySelector(".menu-container");
 
+function definirMenu(aberto){
+    menuContainer.classList.toggle("active", aberto);
+    menuContainer.setAttribute("aria-expanded", aberto);
+}
+
 menuContainer.addEventListener("click", () =>{
-    menuContainer.classList.toggle("active");
+    definirMenu(!menuContainer.classList.contains("active"));
 })
 const menuItem = document.querySelectorAll(".lista-menu_item");
 
 for(let i = 0; i < menuItem.length; i++){
   menuItem[i].addEventListener("click", () =>{
-      menuContainer.classList.toggle("active");
+      definirMenu(false);
   })
 }
+
+// Link para uma pergunta abre a resposta
+function abrirPergunta(){
+    const alvo = location.hash && document.getElementById(location.hash.slice(1));
+    if (alvo && alvo.tagName === "DETAILS") alvo.open = true;
+}
+window.addEventListener("hashchange", abrirPergunta);
+abrirPergunta();
 
 function iOS() {
     return [
