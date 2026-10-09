@@ -20,10 +20,31 @@ header.cabeçalho{
     .menu-container{
         &{
             cursor: pointer;
-            height: 40px;
+            display: flex;
+            align-items: center;
+            gap: .4em;
+            height: auto;
             margin: 0 1em;
+            padding: 0;
+            border: 0;
+            background: none;
+            color: var(--branco);
+            font: inherit;
+            width: auto;
+        }
+        .menu-icone{
+            display: block;
+            flex-shrink: 0;
+            height: 40px;
             position: relative;
             width: 40px;
+        }
+        .menu-rotulo{
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        &:hover .menu-rotulo{
+            color: var(--cor-primaria);
         }
         .line{
             height: 28px;
@@ -38,6 +59,7 @@ header.cabeçalho{
             width: 28px;
             background: var(--branco);
             border-radius: 4px;
+            left: 0;
             position: absolute;
             transition: transform 250ms ease-in-out,background 1s ease-in-out;
         }
@@ -89,7 +111,7 @@ header.cabeçalho{
             &{
                 visibility: visible;
                 opacity: 100%;
-                height: calc(100vh - 42.3224px);
+                height: calc(100svh - 50px);
                 transition: all 0.300s ease-in-out;
             }
             li:hover a{

@@ -1,0 +1,72 @@
+/* Leitura confortável para quem tem mais de 50 anos.
+   Mantém as cores do site; ajusta tamanho, espaçamento, peso e foco.
+   Importado por último em styles.css, por isso sobrescreve as regras anteriores. */
+
+html{
+    font-size: 112.5%;
+}
+body{
+    animation: none;
+    line-height: 1.6;
+}
+
+/* Nenhum texto mais fino que o normal */
+.duvidas_fontes, .duvidas_fontes a, .rodape_direitos{
+    font-weight: 400;
+}
+
+/* Nenhum texto menor que 1rem */
+.banner .banner_texto{
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+.duvidas_respostas, .duvidas_respostas_itens, .duvidas_fontes{
+    font-size: 1rem;
+}
+.duvidas_respostas, .duvidas_respostas_itens{
+    line-height: 1.6;
+    max-width: 65ch;
+}
+.sobre_texto{
+    text-align: left;
+    text-justify: auto;
+    line-height: 1.6;
+    max-width: 65ch;
+}
+
+/* Links de texto sublinhados, para não depender só da cor */
+.duvidas_respostas a, .duvidas_respostas_itens a, .sobre_texto a, .rodape_direitos a{
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+
+/* Foco visível dourado em tudo o que recebe o teclado */
+:focus-visible{
+    outline: 3px solid var(--cor-primaria-claro);
+    outline-offset: 3px;
+}
+
+/* Cabeçalho com fundo sólido, sem transparência */
+header.cabeçalho{
+    background: var(--preto);
+    border-bottom: 1px solid var(--cor-primaria-escuro);
+}
+header.cabeçalho:has(.menu-container.active){
+    background: var(--preto);
+}
+
+/* Quem prefere menos movimento não vê animações de entrada */
+@media (prefers-reduced-motion: reduce){
+    *, *::before, *::after{
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Áreas de toque de pelo menos 44 px, para quem tem mão menos precisa */
+header.cabeçalho a, header.cabeçalho .menu-container, .lista-menu_item, .redes a{
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}

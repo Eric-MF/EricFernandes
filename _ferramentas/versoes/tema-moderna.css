@@ -1,0 +1,128 @@
+/* Versão Moderna: fundo branco, verde-petróleo e letras sem serifa */
+:root{
+    --fundo: #fff;
+    --texto: #13232B;
+    --texto-suave: #46565E;
+    --titulo: #0B3C45;
+    --fonte-titulo: "Inter", system-ui, sans-serif;
+    --link: #0B5C68;
+    --link-hover: #083F48;
+    --foco: #0B5C68;
+    --destaque: #0B5C68;
+    --principal: #0B5C68;
+    --principal-hover: #083F48;
+    --principal-texto: #fff;
+    --linha: #D5E6E4;
+    --linha-forte: #9CC3C0;
+    --cartao: #F3F9F8;
+    --cartao-hover: #E3F1EF;
+    --raio: 1rem;
+    --raio-botao: 2rem;
+    --faixa-telefone: #0B5C68;
+    --faixa-telefone-texto: #fff;
+    --menu-link: #13232B;
+    --menu-link-hover: #0B5C68;
+    --menu-linha: #D5E6E4;
+    --rodape-fundo: #0B3C45;
+    --rodape-texto: #fff;
+}
+h1, h2{
+    font-weight: 800;
+    letter-spacing: -.02em;
+}
+.topo{
+    border-bottom: 1px solid var(--linha);
+    background: #fff;
+}
+.topo-telefone :focus-visible, .rodape :focus-visible, .sobre-cartao :focus-visible{ outline-color: #fff; }
+.marca svg{ color: #0B5C68; }
+
+.apresentacao{ background: linear-gradient(135deg, #E3F1EF 0%, #fff 65%); }
+.apresentacao-grade{
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+}
+.apresentacao h1{ margin-bottom: .1em; }
+.selo{
+    display: inline-block;
+    padding: .3em .9em;
+    border-radius: 2em;
+    background: #D5E9E6;
+    color: #0B3C45;
+    font-size: .95rem;
+    font-weight: 700;
+}
+.apresentacao-sub{
+    color: #0B5C68;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.apresentacao-lead{
+    max-width: 34ch;
+    font-size: 1.2rem;
+}
+.acoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+.acoes .botao-contorno{ background: #fff; }
+.apresentacao-foto{
+    width: 100%;
+    max-width: 24rem;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 25%, #2A9A9A, #0B3C45);
+    box-shadow: 0 0 0 3px #0B5C68, 0 1rem 2.5rem rgba(11, 60, 69, .25);
+}
+.apresentacao-foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+@media (min-width: 48em){
+    .apresentacao-grade{ grid-template-columns: 1.2fr 1fr; }
+}
+
+.sobre{ padding-bottom: 0; }
+.sobre-cartao{
+    padding: 1.8rem;
+    border-radius: var(--raio);
+    background: #0B3C45;
+    color: #fff;
+}
+.sobre-cartao h2{ color: #fff; }
+.sobre-cartao strong{ color: #A6E6DA; }
+.sobre-cartao p{ max-width: 60ch; font-size: 1.15rem; }
+.sobre-cartao p:last-child{ margin-bottom: 0; }
+
+.secao-simulador .simulador{
+    max-width: 44rem;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 .5rem 2rem rgba(11, 60, 69, .12);
+}
+
+/* Ícone em círculo antes de cada pergunta */
+.pergunta-icone{
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background: #0B5C68;
+    color: #fff;
+}
+.pergunta-icone svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: none;
+}
+.contato{ background: var(--cartao); }

@@ -33,6 +33,7 @@ Os artigos são arquivos de texto simples, na pasta `_blog/artigos/`. Um script 
    ```
 
    O script avisa se faltar alguma informação e não publica nada até você corrigir.
+   Ele também atualiza o `sitemap.xml`, o mapa do site que ajuda o Google a encontrar os artigos.
 5. Confira a página no navegador e faça o commit.
 
 ## Como escrever o texto

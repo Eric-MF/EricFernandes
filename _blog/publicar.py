@@ -243,6 +243,43 @@ def pagina_lista(artigos, modelo):
     return preencher(modelo, {"marca": MARCA, "endereco": ENDERECO_BLOG, "lista": lista})
 
 
+def gerar_sitemap(publicados):
+    """Mapa do site para os buscadores. Não inclui as versões de teste (93115, 75946, 48652, 59899),
+    que têm noindex e não devem aparecer no Google."""
+    def entrada(endereco, ultima=None):
+        marca = f"    <lastmod>{ultima.isoformat()}</lastmod>\n" if ultima else ""
+        return f"  <url>\n    <loc>{endereco}</loc>\n{marca}  </url>"
+    itens = [entrada(ENDERECO_SITE + "/"), entrada(ENDERECO_SITE + "/privacidade/")]
+    if publicados:
+        itens.append(entrada(ENDERECO_BLOG, max(a["atualizado"] or a["data"] for a in publicados)))
+    for artigo in publicados:
+        itens.append(entrada(f'{ENDERECO_BLOG}{artigo["endereco"]}.html', artigo["atualizado"] or artigo["data"]))
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + "\n".join(itens) + "\n</urlset>\n")
+
+
+def atualizar_inicio(publicados):
+    """Põe os artigos mais recentes na página inicial, entre as marcas <!-- artigos:inicio --> e
+    <!-- artigos:fim --> do index.html. Sem essas marcas, a página inicial não é alterada."""
+    caminho = RAIZ / "index.html"
+    texto = caminho.read_text(encoding="utf-8")
+    ini, fim = "<!-- artigos:inicio -->", "<!-- artigos:fim -->"
+    if ini not in texto:
+        return False
+    if fim not in texto:
+        raise SystemExit("index.html tem a marca de início dos artigos, mas falta a marca <!-- artigos:fim -->.")
+    cartoes = "\n".join(
+        f'                <li class="artigo_cartao"><a href="previdenciario/blog/{a["endereco"]}.html">'
+        f'{html.escape(a["titulo"])}</a><p>{html.escape(a["descricao"])}</p></li>'
+        for a in publicados[:3])
+    bloco = f'\n            <ul class="artigos_lista">\n{cartoes}\n            </ul>\n            '
+    antes, resto = texto.split(ini, 1)
+    _, depois = resto.split(fim, 1)
+    caminho.write_text(antes + ini + bloco + fim + depois, encoding="utf-8")
+    return True
+
+
 def main():
     modelo_artigo = (MODELOS / "artigo.html").read_text(encoding="utf-8")
     modelo_lista = (MODELOS / "lista.html").read_text(encoding="utf-8")
@@ -266,6 +303,9 @@ def main():
         (SAIDA / nome).write_text(pagina_artigo(artigo, modelo_artigo), encoding="utf-8")
         gerados.add(nome)
     (SAIDA / "index.html").write_text(pagina_lista(publicados, modelo_lista), encoding="utf-8")
+    (RAIZ / "sitemap.xml").write_text(gerar_sitemap(publicados), encoding="utf-8")
+    if atualizar_inicio(publicados):
+        print("Página inicial atualizada com os artigos mais recentes")
 
     # Remove páginas de artigos que viraram rascunho ou foram apagados
     removidos = []
@@ -274,6 +314,7 @@ def main():
             pagina.unlink()
             removidos.append(pagina.name)
 
+    print("Mapa do site atualizado em sitemap.xml")
     print(f"Blog atualizado em {SAIDA.relative_to(RAIZ)}/")
     for artigo in publicados:
         print(f'  ✓ {artigo["endereco"]}.html  ({artigo["titulo"]})')

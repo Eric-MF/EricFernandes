@@ -1,16 +1,23 @@
 .banner_img{
-    padding: 2vw;
-    width: 96vw;
+    --foto-posicao: 50% 50%;
+    aspect-ratio: 1200 / 1744;
+    object-fit: contain;
+    object-position: var(--foto-posicao);
+    display: block;
+    margin: 3em auto -8em;
+    padding: 0;
+    width: 92vw;
+    height: auto;
     z-index: -999;
-    margin: 3em 0 -8em;
-    transition: all 1s;
 }
 .banner{
     &{
         background: var(--primaria-degrade);
         text-align: center;
-        width: calc(100vw - 2em);
+        width: calc(100% - 2em);
+        margin: 0 1em;
         padding: 2.5em 2em;
+        border-radius: 1em;
         position:relative;
         z-index: 0;
     }
@@ -28,18 +35,52 @@
 }
 @media screen and (min-aspect-ratio: 2/3) {
     .container-banner{
-        max-width: 40vw;
-        transition: all 1s;
+        --altura-cabecalho: 52px;
+        --largura-foto: min(40vw, calc((100svh - var(--altura-cabecalho) - 12em) * 0.93));
+        flex: none;
+        width: var(--largura-foto);
+        padding-top: var(--altura-cabecalho);
     }
+    .banner-fixo{
+        position: sticky;
+        top: var(--altura-cabecalho);
+        height: calc(100vh - var(--altura-cabecalho));
+        height: calc(100svh - var(--altura-cabecalho));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* O cartão começa a 74% da altura da foto, no meio da mão (0,26 × 1744 / 1200 = 0,378 da largura) */
     .banner_img{
-        width: 42vw;
-        margin: 3em 0 -9.6em;
-        transition: all 1s;
+        width: 100%;
+        margin: 0 0 calc(var(--largura-foto) * -0.378);
+        flex: none;
     }
     .banner{
-        width: 40vw;
+        width: 100%;
+        margin: 0;
+        padding: 1em;
         border-radius: 0em 1em 1em 0em;
-        transition: all 1s;
     }
-
+    .container-banner .banner_titulo{
+        font-size: 1.25em;
+    }
+    .container-banner .banner .banner_texto{
+        font-size: 1rem;
+        line-height: 1.45;
+        margin-top: .4em;
+    }
+}
+@media screen and (min-aspect-ratio: 2/3) and (max-height: 600px) {
+    .container-banner{
+        --largura-foto: 40vw;
+    }
+    .banner-fixo{
+        position: static;
+        height: auto;
+        display: block;
+    }
+    .banner_img{
+        margin: 2em 0 -6em;
+    }
 }

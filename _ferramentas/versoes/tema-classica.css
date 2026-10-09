@@ -1,0 +1,234 @@
+/* Versão Clássica: azul-marinho, dourado e títulos com serifa */
+:root{
+    --fundo: #FAF6EC;
+    --texto: #1D2433;
+    --texto-suave: #4A5163;
+    --titulo: #14284B;
+    --fonte-titulo: "Libre Baskerville", Georgia, serif;
+    --link: #14284B;
+    --link-hover: #7A5A1C;
+    --foco: #8A5E12;
+    --destaque: #14284B;
+    --principal: #14284B;
+    --principal-hover: #0B1A33;
+    --principal-texto: #fff;
+    --linha: #E3D9C3;
+    --linha-forte: #C9B891;
+    --cartao: #FFFDF7;
+    --cartao-hover: #F3ECDC;
+    --raio: .6rem;
+    --raio-botao: .5rem;
+    --faixa-telefone: #0B1A33;
+    --faixa-telefone-texto: #E3C27E;
+    --menu-link: #fff;
+    --menu-link-hover: #E3C27E;
+    --menu-linha: rgba(255, 255, 255, .2);
+    --rodape-fundo: #14284B;
+    --rodape-texto: #fff;
+    --ouro: #D9B66E;
+    --ouro-claro: #E3C27E;
+    --marinho: #14284B;
+    --marinho-escuro: #0B1A33;
+}
+.topo{
+    background: var(--marinho);
+    color: #fff;
+}
+.topo :focus-visible, .titulo-faixa :focus-visible, .heroi :focus-visible, .rodape :focus-visible{
+    outline-color: var(--ouro-claro);
+}
+.menu{ border-top: 1px solid rgba(217, 182, 110, .5); }
+
+/* Telefone em dourado à direita (no computador) */
+@media (min-width: 48em){
+    .topo-telefone{ display: none; }
+    .topo-fone{
+        display: flex;
+        align-items: center;
+        gap: .6em;
+        color: var(--ouro-claro);
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: right;
+        text-decoration: none;
+    }
+    .topo-fone:hover{
+        color: #fff;
+        text-decoration: underline;
+    }
+    .topo-fone svg{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    .topo-fone-oab{
+        display: block;
+        color: #fff;
+        font-size: .9rem;
+        font-weight: 400;
+    }
+    .marca-oab{ display: none; }
+}
+
+/* Faixa com o nome */
+.titulo-faixa{
+    padding: 1.4rem 0;
+    border-bottom: 3px solid var(--ouro);
+    background: var(--marinho-escuro);
+    text-align: center;
+}
+.titulo-faixa h1{
+    margin: 0;
+    color: #fff;
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+.titulo-divisor{
+    margin: 0 .2em;
+    color: var(--ouro);
+}
+.titulo-area{
+    color: var(--ouro-claro);
+    font-weight: 400;
+}
+@media (max-width: 47.99em){
+    .titulo-divisor{ display: none; }
+    .titulo-area{
+        display: block;
+        margin-top: .4em;
+        font-size: .6em;
+    }
+}
+
+/* Destaque: foto emoldurada e lista de dúvidas */
+.heroi{
+    position: relative;
+    padding: 3rem 0 3.5rem;
+    border-bottom: 4px solid var(--ouro);
+    background: linear-gradient(135deg, #1B3360 0%, var(--marinho-escuro) 100%);
+    color: #fff;
+}
+.heroi.com-textura{
+    background:
+        linear-gradient(rgba(11, 26, 51, .35), rgba(11, 26, 51, .6)),
+        url("img/textura-madeira.webp") center / cover;
+}
+.heroi::after{
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: var(--ouro);
+    transform: translateX(-50%) rotate(45deg);
+}
+.heroi-grade{
+    display: grid;
+    align-items: center;
+    gap: 2.5rem;
+}
+.heroi h2{
+    color: var(--ouro-claro);
+    font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+}
+.moldura{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    max-width: 22rem;
+    margin: 0 auto;
+    padding: 1.5rem .5rem 0;
+    border: 6px solid var(--ouro);
+    outline: 1px solid var(--ouro);
+    outline-offset: 5px;
+    background: linear-gradient(180deg, #2B4470, var(--marinho));
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, .4);
+}
+.moldura.com-fundo{ background: url("img/fundo-biblioteca.webp") center / cover; }
+.lista-check{
+    margin: 0 0 2rem;
+    padding: 0;
+    list-style: none;
+}
+.lista-check li{
+    position: relative;
+    margin-bottom: .3rem;
+    padding-left: 2.2rem;
+}
+.lista-check li::before{
+    content: "";
+    position: absolute;
+    top: .7em;
+    left: .5rem;
+    width: .45em;
+    height: .85em;
+    border-right: 3px solid var(--ouro);
+    border-bottom: 3px solid var(--ouro);
+    transform: rotate(45deg);
+}
+.lista-check a{
+    display: inline-block;
+    padding: .4em 0;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration-color: rgba(227, 194, 126, .7);
+}
+.lista-check a:hover{ color: var(--ouro-claro); }
+.acoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+.botao-ouro, .botao-ouro:visited{
+    background: var(--ouro);
+    color: var(--marinho);
+}
+.botao-ouro:hover{
+    background: #E8CB8C;
+    color: var(--marinho);
+}
+.botao-contorno-ouro, .botao-contorno-ouro:visited{
+    border-color: var(--ouro);
+    background: transparent;
+    color: var(--ouro-claro);
+}
+.botao-contorno-ouro:hover{
+    background: rgba(217, 182, 110, .15);
+    color: #fff;
+}
+@media (min-width: 48em){
+    .heroi-grade{ grid-template-columns: minmax(0, 22rem) 1fr; }
+}
+
+/* Quem é Eric */
+.sobre{
+    padding-top: 4rem;
+    text-align: center;
+}
+.sobre .container{ max-width: 46rem; }
+.sobre h2::after{
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 3px;
+    margin: .6em auto 0;
+    background: var(--ouro);
+}
+.sobre p{
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/* Marca de "check" antes de cada pergunta */
+.pergunta summary::before{
+    content: "";
+    flex-shrink: 0;
+    width: .45em;
+    height: .85em;
+    margin: 0 .3em;
+    border-right: 3px solid #7A5A1C;
+    border-bottom: 3px solid #7A5A1C;
+    transform: translateY(-.15em) rotate(45deg);
+}
+.contato{ background: #F3ECDC; }

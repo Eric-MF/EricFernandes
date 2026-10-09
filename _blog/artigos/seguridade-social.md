@@ -79,7 +79,7 @@ O BPC **não é aposentadoria**: não exige contribuição, não paga 13º e nã
 
 ### Outros programas
 
-Além do BPC, a assistência social inclui o [Bolsa Família](https://www.gov.br/mds/pt-br/acoes-e-programas/bolsa-familia), os [Benefícios Eventuais](https://www.gov.br/mds/pt-br/acoes-e-programas/suas/beneficios-assistenciais/beneficios-eventuais) e o [Serviço de Proteção e Atendimento Integral à Família (PAIF)](https://www.gov.br/mds/pt-br/acoes-e-programas/suas/servicos-e-programas/protecao-e-atencao-integral-a-familia), oferecido nos Centros de Referência da Assistência Social (CRAS).
+Além do BPC, a assistência social inclui o [Bolsa Família](https://www.gov.br/mds/pt-br/acoes-e-programas/bolsa-familia), os [Benefícios Eventuais](https://www.gov.br/mds/pt-br/acoes-e-programas/SUAS/beneficios-assistenciais/beneficios-eventuais) e o [Serviço de Proteção e Atendimento Integral à Família (PAIF)](https://www.gov.br/mds/pt-br/acoes-e-programas/SUAS/servicos-e-programas-1/protecao-e-atendimento-integral-a-familia), oferecido nos Centros de Referência da Assistência Social (CRAS).
 
 ## Saúde {#saude}
 

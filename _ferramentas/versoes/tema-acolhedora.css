@@ -1,0 +1,188 @@
+/* Versão Acolhedora: tons creme, pêssego e verde-sálvia, títulos com serifa */
+:root{
+    --fundo: #FBF5EC;
+    --texto: #2A211C;
+    --texto-suave: #5A4A40;
+    --titulo: #1B2A45;
+    --fonte-titulo: "Source Serif 4", Georgia, serif;
+    --link: #8A3E17;
+    --link-hover: #5E2A0F;
+    --foco: #8A3E17;
+    --destaque: #8A3E17;
+    --principal: #1B2A45;
+    --principal-hover: #0F1A2E;
+    --principal-texto: #fff;
+    --linha: #EAD9C4;
+    --linha-forte: #D2B79A;
+    --cartao: #FFFBF5;
+    --cartao-hover: #F8E9DA;
+    --raio: 1.2rem;
+    --raio-botao: 2rem;
+    --faixa-telefone: #DCE8D6;
+    --faixa-telefone-texto: #1F3A24;
+    --menu-link: #2A211C;
+    --menu-link-hover: #8A3E17;
+    --menu-linha: #C3D6BB;
+    --rodape-fundo: #2E3B2F;
+    --rodape-texto: #fff;
+    --salvia: #E8F0E3;
+    --pessego: #F6D9C6;
+}
+.rodape :focus-visible{ outline-color: #F0B393; }
+
+/* Topo: nome grande à esquerda, telefone à direita (no computador) */
+.marca svg{ color: #1B2A45; }
+.marca-nome{ font-size: 1.6rem; }
+.menu{
+    border-top: 1px solid #C3D6BB;
+    border-bottom: 1px solid #C3D6BB;
+    background: #EEF4EA;
+}
+@media (min-width: 48em){
+    .topo-telefone{ display: none; }
+    .topo-fone{
+        display: flex;
+        align-items: center;
+        gap: .6em;
+        color: #1B2A45;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: right;
+        text-decoration: none;
+    }
+    .topo-fone:hover{ color: #8A3E17; }
+    .topo-fone svg{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    .topo-fone-oab{
+        display: block;
+        color: var(--texto-suave);
+        font-size: .9rem;
+        font-weight: 400;
+    }
+    .marca-oab{ display: none; }
+}
+
+/* Apresentação com curva suave no final */
+.apresentacao{
+    position: relative;
+    padding-bottom: 5rem;
+    background: linear-gradient(180deg, var(--salvia) 0%, #F4EFE4 100%);
+}
+.onda{
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    fill: var(--fundo);
+}
+.apresentacao-grade{
+    display: grid;
+    align-items: start;
+    gap: 2rem;
+}
+.saudacao{
+    margin-bottom: .4em;
+    color: #3D5A3A;
+    font-family: var(--fonte-titulo);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.apresentacao h1{ font-size: clamp(2.2rem, 5.5vw, 3.2rem); }
+.apresentacao-lead{
+    max-width: 40ch;
+    font-size: 1.2rem;
+}
+.apresentacao-foto{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    max-width: 26rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 45% 45% 1.5rem 1.5rem;
+    background: linear-gradient(180deg, var(--pessego), #F0B393);
+    box-shadow: 0 1rem 2.5rem rgba(90, 60, 40, .18);
+}
+.apresentacao-foto.com-fundo{
+    background: url("img/fundo-escritorio.webp") center / cover no-repeat;
+}
+.apresentacao-foto img{
+    width: 92%;
+    margin-top: 2rem;
+}
+@media (min-width: 48em){
+    .apresentacao-grade{ grid-template-columns: 1fr 1.3fr; }
+}
+
+/* Dúvidas em cartões com ilustração */
+.duvidas .container{ max-width: 52rem; }
+.duvidas-topo{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+.duvidas-topo h2{ margin: 0; }
+.duvidas-ilustracao{
+    width: 13rem;
+    border-radius: 1.5rem;
+}
+.pergunta{
+    border: 0;
+    background: #fff;
+    box-shadow: 0 .3rem 1.2rem rgba(90, 60, 40, .1);
+}
+.pergunta-icone, .pergunta-avatar{
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    overflow: hidden;
+    border-radius: 50%;
+    background: var(--pessego);
+    color: #8A3E17;
+}
+.pergunta-icone svg{
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: none;
+}
+.pergunta-avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Quem é Eric */
+.sobre{ padding-top: 0; }
+.sobre-cartao{
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 1.8rem;
+    border-radius: var(--raio);
+    background: #F8E9DA;
+}
+.sobre-cartao p{ font-size: 1.15rem; }
+.contato{ background: #F3EDE3; }
+.contato-topo{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    margin-bottom: 1.5rem;
+}
+.contato-ilustracao{
+    width: 15rem;
+    border-radius: 50%;
+}

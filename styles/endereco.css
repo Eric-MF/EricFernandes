@@ -1,3 +1,6 @@
+.endereco{
+    flex: 0 0 100%;
+}
 .endereco_titulo{
     font-weight: 600;
     margin: 0.5em 1em;
@@ -7,4 +10,20 @@
     width: 70vw;
     margin-left: 14vw;
     height: 60vw;
+}
+.endereco .mapa-bloqueado{
+    background: var(--cor-primaria-escurissima);
+    border: 2px dashed var(--cor-primaria-claro);
+    color: var(--branco);
+}
+.endereco .mapa-bloqueado p{
+    color: var(--cor-primaria-clarissima);
+}
+.endereco .mapa-bloqueado button{
+    background: var(--cor-primaria-claro);
+    border-color: var(--cor-primaria-claro);
+    color: var(--preto);
+}
+.endereco .mapa-bloqueado :focus-visible{
+    outline-color: var(--cor-primaria-claro);
 }

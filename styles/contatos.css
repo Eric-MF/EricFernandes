@@ -4,6 +4,9 @@
     padding: 0.5em 1em;
 }
 
+.contatos{
+    flex: 0 0 100%;
+}
 .contatos-titulo{
     font-size: 1.5em;
 }
@@ -49,8 +52,11 @@
 }
 .redes{
     display: flex;
-    justify-content: space-around;
-    margin: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5em 1.2em;
+    margin: 1em auto;
+    padding: 0 1em;
     align-items: center;
 }
 

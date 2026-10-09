@@ -1,0 +1,44 @@
+/* Artigos na página inicial e na lista do blog: cartões com as cores do site. */
+.artigos{
+    flex: 0 0 100%;
+    padding: 2em 1.2em;
+    max-width: 60ch;
+    margin: 0 auto;
+}
+.artigos_titulo{
+    color: var(--cor-primaria-claro);
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: .6em;
+}
+.artigos_lista{
+    display: grid;
+    gap: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.artigo_cartao{
+    background: var(--cor-primaria-escurissima);
+    border: 1px solid var(--cor-primaria-escuro);
+    border-radius: 12px;
+    padding: 1em 1.2em;
+}
+.artigo_cartao a{
+    color: var(--cor-primaria-clarissima);
+    font-size: 1.15em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: .2em;
+}
+.artigo_cartao p{
+    color: var(--cor-primaria-clarissima);
+    margin: .4em 0 0;
+}
+.artigos_mais{
+    margin-top: 1.4em;
+    text-align: center;
+}
+.artigos_mais a{
+    color: var(--cor-primaria-claro);
+}
